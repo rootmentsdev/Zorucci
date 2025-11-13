@@ -25,29 +25,54 @@ Header , Footer {
 }
 
 /* collection section styles */
-
-
-
-
-@media (max-width:768px)
-{
-    #head1{
-        font-size: 40px;
-    }
-    #para1{
-        font-size: 15px;
-    }
-    .white-box {
-    position: static;
-    transform: none;
-    width: 95%;
-    margin: 20px auto;
-  }
-  #collectimg1{
-    height: 100px;
-  }
-  #collectimg2{
-    height: 100px;
-  }
+#chead1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
+#chead2{
+         font-family: "Noto Serif", serif;
+         font-weight: 400;
+         font-size: 42px;
+}
+
+
+@media (max-width: 768px) {
+  #head1 {
+    font-size: 40px;
+  }
+
+  #para1 {
+    font-size: 15px;
+  }
+
+  .white-box {
+    position: relative !important;
+    transform: none !important;
+    top: 43% !important; 
+    width: 90% !important;
+    height: auto !important;
+    
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+
+  #homeing2{
+    transform:none;
+  }
+
+  #greenbg{
+    height: 850px;
+  }
+
+  #collectimg1 {
+    height: 100px;
+  }
+
+  #collectimg2 {
+    height: 100px;
+  }
+
+}
+
 

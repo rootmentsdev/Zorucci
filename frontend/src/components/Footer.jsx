@@ -12,9 +12,9 @@ import { RiWhatsappFill } from "react-icons/ri";
 function Footer() {
   return (
     <>
-    <Container className='pt-5 mx-auto'>
+    <Container className='pt-5 mx-auto '>
        <Row className='mx-auto'>
-         <Col sm md className=' d-flex flex-column justify-content-end '>
+         <Col sm md className=' d-flex flex-column justify-content-start '>
             <ul id='list'>
               <li className=''><Image src={logo2} alt="" fluid className=" mb-5 pb-3" style={{width:"180px"}}/></li>
               <li className='my-2'><FaPhoneAlt className='me-3'/>+91 62350 31144</li>
