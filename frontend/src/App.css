@@ -3,16 +3,51 @@
     padding: 0;
 }
 
-#list{
-    list-style: none;
-        gap: 70px;
-}
-
-#list li a{
-    text-decoration: none;
-    color: white;
-}
-
-Header{
+Header , Footer {
     font-family: "DM Sans", sans-serif;
 }
+
+#list{
+    list-style: none;
+}
+
+#head1{
+     font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 75px;
+    text-shadow: 2px;
+    color: hsla(122, 44%, 13%, 1.00);
+}
+
+#para1{
+    font-family: "DM Sans", sans-serif;
+    text-align: justify;
+}
+
+/* collection section styles */
+
+
+
+
+@media (max-width:768px)
+{
+    #head1{
+        font-size: 40px;
+    }
+    #para1{
+        font-size: 15px;
+    }
+    .white-box {
+    position: static;
+    transform: none;
+    width: 95%;
+    margin: 20px auto;
+  }
+  #collectimg1{
+    height: 100px;
+  }
+  #collectimg2{
+    height: 100px;
+  }
+}
+

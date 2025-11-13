@@ -1,45 +1,39 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
 import logo from '../images/logo.png'
-import { Navbar, Nav, Container } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
     return (
         <>
-
-            <nav class="navbar navbar-expand-lg bg-transaprent sticky-top">
-                <div class="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        <Image src={logo} alt="" fluid className="" style={{ width: "200px" }} />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul id='list' class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Collections</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href='#'>Jewelry</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="#">Location</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blogs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href='#'>Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+            <Navbar expand="lg" className="bg-black bg-opacity-25" fixed="top">
+                <Container className="d-flex justify-content-between align-items-center">
+                    <Image src={logo} alt="" fluid className="d-block d-lg-none" style={{ width: "150px" }}/>
             
-                </div>
-            </nav>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+                        <Nav className="gap-md-5 d-flex align-items-center">
+                            <Nav.Link href="#about" className="text-white">About</Nav.Link>
+                            <Nav.Link href="#collections" className="text-white">Collections</Nav.Link>
+                            <Nav.Link href="#jewelry" className="text-white">Jewelry</Nav.Link>
+
+                        
+                            <Nav.Link href="#herosection" className="d-none d-lg-block">
+                                <Image src={logo} alt="" fluid style={{ width: "150px" }} />
+                            </Nav.Link>
+
+                            <Nav.Link href="#location" className="text-white">Location</Nav.Link>
+                            <Nav.Link href="#blog" className="text-white">Blog</Nav.Link>
+                            <Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
+
         </>
     )
 }
