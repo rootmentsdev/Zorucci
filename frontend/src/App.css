@@ -7,6 +7,7 @@ Header , Footer {
     font-family: "DM Sans", sans-serif;
 }
 
+/* landing page */
 #list{
     list-style: none;
 }
@@ -24,7 +25,7 @@ Header , Footer {
     text-align: justify;
 }
 
-/* collection section styles */
+/* collection page */
 #chead1{
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
@@ -88,7 +89,7 @@ Header , Footer {
     border-top-right-radius: 200px;
   }
 
-  #homeing2{
+  #homeimg2{
     transform:none;
   }
 

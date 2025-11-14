@@ -12,8 +12,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 function Footer() {
   return (
     <>
-    <Container className='pt-5 mx-auto '>
-       <Row className='mx-auto g-5'>
+    <Container className='pt-5 mx-auto'>
+       <Row className='mx-auto g-5 text-center text-md-start'>
          <Col md={3} sm={12} className=' d-flex flex-column justify-content-start '>
             <ul id='list'>
               <li className=''><Image src={logo2} alt="" fluid className=" mb-3 pb-3" style={{width:"180px"}}/></li>
@@ -23,7 +23,7 @@ function Footer() {
           </Col>
 
          <Col  md={3} sm={12} className=' d-md-flex flex-column justify-content-end'>
-         <h6 className='ms-4'>QUICK LINKS</h6>
+         <h6 className='ms-4'>QUICK LINKS</h6> 
          <ul id='list'>
           <li className='my-2'>Home</li>
           <li className='my-2'>About Zorucci</li>

@@ -27,6 +27,8 @@ import designimg1 from '../images/designimg1.png';
 import designimg2 from '../images/designimg2.png';
 import designimg3 from '../images/designimg3.png';
 import designimg4 from '../images/designimg4.png';
+
+// Contact section Images
 import contactimg1 from '../images/contactimg1.jpg'
 
 // Icons
