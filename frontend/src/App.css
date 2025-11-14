@@ -29,6 +29,7 @@ Header , Footer {
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
+    color: #5A2A0B;
 }
 #chead2{
          font-family: "Noto Serif", serif;
@@ -36,6 +37,17 @@ Header , Footer {
          font-size: 42px;
 }
 
+/* location side */
+#lhead{
+  font-family: "Noto Serif", serif;
+         font-weight: 400;
+         font-size: 24px;
+}
+#lpara{
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
 
 @media (max-width: 768px) {
   #head1 {
@@ -61,6 +73,10 @@ Header , Footer {
     transform:none;
   }
 
+  #homebtn{
+    width: 30%;
+  }
+
   #greenbg{
     height: 850px;
   }
@@ -72,6 +88,7 @@ Header , Footer {
   #collectimg2 {
     height: 100px;
   }
+  
 
 }
 

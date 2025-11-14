@@ -13,8 +13,8 @@ function Footer() {
   return (
     <>
     <Container className='pt-5 mx-auto '>
-       <Row className='mx-auto'>
-         <Col sm md className=' d-flex flex-column justify-content-start '>
+       <Row className='mx-auto g-5'>
+         <Col md={3} sm={12} className=' d-flex flex-column justify-content-start '>
             <ul id='list'>
               <li className=''><Image src={logo2} alt="" fluid className=" mb-5 pb-3" style={{width:"180px"}}/></li>
               <li className='my-2'><FaPhoneAlt className='me-3'/>+91 62350 31144</li>
@@ -22,7 +22,7 @@ function Footer() {
             </ul>
           </Col>
 
-         <Col sm md className=' d-flex flex-column justify-content-end'>
+         <Col  md={3} sm={12} className=' d-md-flex flex-column justify-content-end'>
          <h6 className='ms-4'>QUICK LINKS</h6>
          <ul id='list'>
           <li className='my-2'>Home</li>
@@ -33,7 +33,7 @@ function Footer() {
          </ul>
          </Col>
 
-         <Col sm md className=' d-flex flex-column justify-content-end'>
+         <Col  md={3} sm={12} className=' d-md-flex flex-column justify-content-end'>
          <h6 className='ms-4'>INFORMATIONS</h6>
          <ul id='list'>
           <li className='my-2'>Location</li>
@@ -44,7 +44,7 @@ function Footer() {
          </ul>
          </Col>
 
-         <Col sm md className=' d-flex flex-column justify-content-end'>
+         <Col  md={3} sm={12} className=' d-md-flex flex-column justify-content-end '>
          <h6 className='ms-4'>CONTACT</h6>
          <ul id='list'>
           <li className='my-2'>+91 9874561230</li>
