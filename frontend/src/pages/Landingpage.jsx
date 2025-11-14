@@ -57,12 +57,19 @@ function Landingpage() {
               Step into Zorucci – Kerala's leading destination for premium bridal fashion. Explore designer bridal lehengas, elegant wedding gowns, and timeless bridal sarees, all handcrafted with love and luxury in mind.Whether you’re walking the aisle or celebrating tradition, Zorucci is where your bridal dream begins.
             </p>
             <div className=' d-flex flex-column align-items-center flex-md-row gap-2 gap-md-5 my-3'>
-              <button id='homebtn' className='btn  py-md-3 text-white ' style={{ width: "45%", backgroundColor: "#0A3F36" }}>
+              <button id='homebtn' className='btn  py-md-3 text-white d-md-block d-none' style={{ width: "45%", backgroundColor: "#0A3F36" }}>
                 Explore Collection
               </button>
-              <button id='homebtn' className='btn py-md-3 d-flex' style={{ width: "45%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
-                Book Appointment <span className='ms-3'><MdArrowOutward /></span>
+              <button id='homebtn' className='btn my-3  py-md-3 text-white d-md-none d-block order-md-1 order-2' style={{ width: "60%", backgroundColor: "#0A3F36" }}>
+                Explore Collection
               </button>
+              <button id='homebtn' className='btn py-md-3 d-flex d-md-block d-none' style={{ width: "45%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
+                Book Appointment <span className=''><MdArrowOutward className='ms-5 mb-1'/></span>
+              </button>
+              <button id='homebtn' className='btn py-md-3 d-flex d-md-none d-block order-md-2 order-1' style={{ width: "60%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
+                Book Appointment <span className=''><MdArrowOutward className='ms-3 mb-1'/></span>
+              </button>
+              
             </div>
 
           </div>

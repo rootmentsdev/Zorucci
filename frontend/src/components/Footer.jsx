@@ -16,9 +16,9 @@ function Footer() {
        <Row className='mx-auto g-5'>
          <Col md={3} sm={12} className=' d-flex flex-column justify-content-start '>
             <ul id='list'>
-              <li className=''><Image src={logo2} alt="" fluid className=" mb-5 pb-3" style={{width:"180px"}}/></li>
-              <li className='my-2'><FaPhoneAlt className='me-3'/>+91 62350 31144</li>
-              <li className='my-2'><RiWhatsappFill className='me-3' />Whatsapp</li>         
+              <li className=''><Image src={logo2} alt="" fluid className=" mb-3 pb-3" style={{width:"180px"}}/></li>
+              <li className='py-3'><FaPhoneAlt className='me-3'/>+91 62350 31144</li>
+              <li className='py-3'><RiWhatsappFill className='me-3' />Whatsapp</li>         
             </ul>
           </Col>
 
