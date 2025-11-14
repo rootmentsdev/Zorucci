@@ -283,7 +283,7 @@ function Landingpage() {
       </Container>
 
       {/* contact page */}
-      <section>
+      <section id='contact'>
         <div style={{backgroundImage: `url(${contactimg1})`,backgroundSize: "cover",backgroundPosition: "70% 40%",width: "100%",height: "655px",}}>
           <Row className='py-5 mx-5'>
           <Col md={6} sm={12}>
@@ -311,6 +311,57 @@ function Landingpage() {
         </div>
         
       </section>
+
+      {/* faq page */}
+      <Container>
+        <Row className='mt-5 g-0'>
+          <Col md={4} sm={12} >
+          <div className='text-md-start text-center'>
+            <p id='chead1'>FAQ</p>
+          <p id='chead2'>For a seamless <br /> bridal experience</p>
+          </div>
+          </Col>
+          <Col md={8} sm={12} className=''>
+          <ul id='faqlist'>
+            <li>
+              <div className='d-flex justify-content-between'>
+                <p>Where can I buy premium bridal lehengas in Kerala?</p>
+                <span className='px-3'>+</span>
+              </div>
+            </li>
+            <hr />
+            <li>
+              <div className='d-flex justify-content-between'>
+                <p>Does Zorucci offer custom bridal outfits?</p>
+                <span className='px-3'>+</span>
+              </div>
+            </li>
+            <hr />
+            <li>
+              <div className='d-flex justify-content-between'>
+                <p>Do you offer wedding gowns for Christian ceremonies?</p>
+                <span className='px-3'>+</span>
+              </div>
+            </li>
+            <hr />
+            <li>
+              <div className='d-flex justify-content-between'>
+                <p>What bridal outfit types does Zorucci offer?</p>
+                <span className='px-3'>+</span>
+              </div>
+            </li>
+            <hr />
+            <li>
+              <div className='d-flex justify-content-between'>
+                <p>Can I book an appointment online or by phone?</p>
+                <span className='px-3'>+</span>
+              </div>
+            </li>
+            <hr />
+          </ul>
+          </Col>
+        </Row>
+      </Container>
 
 
 

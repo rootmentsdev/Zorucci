@@ -62,6 +62,11 @@ Header , Footer {
          font-size: 54px;
 }
 
+
+/* faq page */
+#faqlist{
+  list-style: none;
+}
 /* responsive */
 @media (max-width: 768px) {
   #head1 {
