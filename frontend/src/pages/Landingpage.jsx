@@ -67,7 +67,7 @@ function Landingpage() {
           style={{
             top: "63%",
             backgroundColor: "white",
-            width: "80%",
+            width: "76%",
             borderTopRightRadius: "200px",
             height: "488px",
           }}
