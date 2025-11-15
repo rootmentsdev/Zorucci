@@ -8,13 +8,21 @@ Header , Footer {
 }
 
 
+
+/* header */
+.navbar-toggler {
+  border: 2px solid white !important;
+  padding: 4px 8px !important;
+}
+
+
 /* landing page */
 #list{
     list-style: none;
 }
 
 #head1{
-     font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", serif;
     font-weight: 400;
     font-size: 75px;
     text-shadow: 2px;
@@ -22,31 +30,74 @@ Header , Footer {
 }
 
 #para1{
-    font-family: "DM Sans", sans-serif;
-    text-align: justify;
+  font-family: "DM Sans", sans-serif;
+  text-align:justify;
+  font-Size: 16px;
+  color: #171717;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 6px;
+    
+    
 }
 
 
-
-/* collection page */
-#chead1{
+/* collection page and jewelry page */
+#chead1 , #jhead1{
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #5A2A0B;
 }
-#chead2{
-         font-family: "Noto Serif", serif;
-         font-weight: 400;
-         font-size: 42px;
+#chead2 , #jhead2{
+    font-family: "Noto Serif", serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500;     
+   
+}
+
+#cpara1 ,#jpara1{
+  font-family: "DM Sans", sans-serif;
+  text-align:justify;
+  font-Size: 16px;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 6px;
+    
+}
+
+/* Design page */
+#dhead1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5A2A0B;
+}
+#dhead2{
+    font-family: "Noto Serif", serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500;     
+    color: #0A3F36;
+}
+
+#dpara1{
+  font-family: "DM Sans", sans-serif;
+  text-align:justify;
+  font-Size: 16px;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 6px;
 }
 
 
 /* location page */
 #lhead{
   font-family: "Noto Serif", serif;
-         font-weight: 400;
-         font-size: 24px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;     
 }
 #lpara{
   font-family: "DM Sans", sans-serif;
@@ -68,9 +119,24 @@ Header , Footer {
 }
 
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white !important;
+  opacity: 3; 
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  color: white !important;
+}
+
+
+
 /* faq page */
 #faqlist{
   list-style: none;
+  
 }
 
 

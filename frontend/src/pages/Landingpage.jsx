@@ -43,70 +43,163 @@ import { MdArrowOutward } from "react-icons/md";
 function Landingpage() {
   return (
     <>
+      
       {/* landing page */}
       <section id='herosection'>
         <div className='w-100 position-relative'>
           <Header />
-          <Image style={{ width: "100%", height: "655px", objectFit: 'cover', objectPosition: "70% 23%" }} src={home} alt="" fluid className="" />
+          <Image
+            style={{ width: "100%", height: "655px", objectFit: "cover", objectPosition: "70% 23%" }}
+            src={home}
+            alt=""
+            fluid
+          />
         </div>
 
-        <div id='greenbg' className='w-100 position-relative ' style={{ minHeight: "500px", backgroundColor: "#0A3F36" }}></div>
+        <div
+          id='greenbg'
+          className='w-100 position-relative'
+          style={{ minHeight: "500px", backgroundColor: "#0A3F36" }}
+        ></div>
 
-        <div className='row align-items-center white-box position-absolute start-50 translate-middle-x  ms-auto' style={{ top: "63%", backgroundColor: "white", width: "80%", borderTopRightRadius: "200px", height: "488px" }}>
-          <div className="col-md-8 px-md-5 d-flex flex-column justify-content-center text-center text-md-start order-md-1 order-2 mb-5">
-            <h1 id='head1' className=''>Luxury Bridal Wear for the Modern Bride</h1>
-            <p id='para1' className=''>
-              Step into Zorucci – Kerala's leading destination for premium bridal fashion. Explore designer bridal lehengas, elegant wedding gowns, and timeless bridal sarees, all handcrafted with love and luxury in mind.Whether you’re walking the aisle or celebrating tradition, Zorucci is where your bridal dream begins.
-            </p>
-            <div className=' d-flex flex-column align-items-center flex-md-row gap-2 gap-md-5 my-3'>
-              <button id='homebtn' className='btn  py-md-3 text-white d-md-block d-none' style={{ width: "45%", backgroundColor: "#0A3F36" }}>
-                Explore Collection
-              </button>
-              <button id='homebtn' className='btn my-3  py-md-3 text-white d-md-none d-block order-md-1 order-2' style={{ width: "60%", backgroundColor: "#0A3F36" }}>
-                Explore Collection
-              </button>
-              <button id='homebtn' className='btn py-md-3 d-flex d-md-block d-none' style={{ width: "45%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
-                Book Appointment <span className=''><MdArrowOutward className='ms-5 mb-1'/></span>
-              </button>
-              <button id='homebtn' className='btn py-md-3 d-flex d-md-none d-block order-md-2 order-1' style={{ width: "60%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
-                Book Appointment <span className=''><MdArrowOutward className='ms-3 mb-1'/></span>
-              </button>
-              
-            </div>
+        <Container
+          className='white-box position-absolute start-50 translate-middle-x'
+          style={{
+            top: "63%",
+            backgroundColor: "white",
+            width: "80%",
+            borderTopRightRadius: "200px",
+            height: "488px",
+          }}
+        >
+          <Row className='align-items-center'>
+            <Col
+              md={8}
+              className='px-md-5 d-flex flex-column justify-content-center text-center text-md-start order-md-1 order-2 mb-5'
+            >
+              <h1 id='head1'>Luxury Bridal Wear for the Modern Bride</h1>
 
-          </div>
-          <div className="col-md-4 p-0 order-md-2 order-1">
-            <div id='homeimg2' style={{ height: "100%", transform: "translateY(-83px)" }}>
-              <Image src={home2} alt="" fluid style={{ width: "467px", height: "571px", objectFit: "cover", borderTopRightRadius: "200px", borderTopLeftRadius: "200px" }} />
-            </div>
-          </div>
+              <p id='para1'>
+                Step into Zorucci – Kerala's leading destination for premium bridal fashion. Explore designer
+                bridal lehengas, elegant wedding gowns, and timeless bridal sarees, all handcrafted with love and
+                luxury in mind. Whether you’re walking the aisle or celebrating tradition, Zorucci is where your
+                bridal dream begins.
+              </p>
 
-        </div>
+              <div className='d-flex flex-column align-items-center flex-md-row gap-2 gap-md-5 my-3'>
+                {/* Large screen Explore button */}
+                <button
+                  id='homebtn'
+                  className='btn py-md-3 text-white d-md-block d-none'
+                  style={{ width: "45%", backgroundColor: "#0A3F36" }}
+                >
+                  Explore Collection
+                </button>
+
+                {/* Mobile Explore button */}
+                <button
+                  id='homebtn'
+                  className='btn my-3 py-md-3 text-white d-md-none d-block order-md-1 order-2'
+                  style={{ width: "60%", backgroundColor: "#0A3F36" }}
+                >
+                  Explore Collection
+                </button>
+
+                {/* Large screen Book button */}
+                <button
+                  id='homebtn'
+                  className='btn py-md-3 d-flex d-md-block d-none'
+                  style={{
+                    width: "45%",
+                    border: "none",
+                    borderBottom: "solid",
+                    borderRadius: "0px",
+                    color: "#5A2A0B",
+                  }}
+                >
+                  Book Appointment{" "}
+                  <span>
+                    <MdArrowOutward className='ms-5 mb-1' />
+                  </span>
+                </button>
+
+                {/* Mobile Book button */}
+                <button
+                  id='homebtn'
+                  className='btn py-md-3 d-flex d-md-none d-block order-md-2 order-1'
+                  style={{
+                    width: "60%",
+                    border: "none",
+                    borderBottom: "solid",
+                    borderRadius: "0px",
+                    color: "#5A2A0B",
+                  }}
+                >
+                  Book Appointment{" "}
+                  <span>
+                    <MdArrowOutward className='ms-3 mb-1' />
+                  </span>
+                </button>
+              </div>
+            </Col>
+
+            <Col md={4} className='p-0 order-md-2 order-1'>
+              <div id='homeimg2' style={{ height: "100%", transform: "translateY(-83px)" }}>
+                <Image
+                  src={home2}
+                  alt=""
+                  fluid
+                  style={{
+                    width: "467px",
+                    height: "571px",
+                    objectFit: "cover",
+                    borderTopRightRadius: "200px",
+                    borderTopLeftRadius: "200px",
+                  }}
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      {/* about page  */}
+      {/* about page */}
       <section id='about' className='py-5'>
-        <div className="container-fluid row mx-auto ">
-          <div className="col-md-6 pt-md-5">
-            <div className="row">
-              <div className="col-6 ">
-                <Image src={about1} fluid alt="example" className='h-100' />
-              </div>
-              <div className="col-6 d-flex flex-column">
-                <Image src={about2} fluid alt="example" className='w-75' />
-                <Image src={about3} fluid alt="example" className='w-75 mt-2' />
-              </div>
-            </div>
-          </div>
+        <Container fluid>
+          <Row className='mx-auto'>
 
-          <div className="col-md-6 text-md-end text-center pt-5">
-            <h5>WHO WE ARE</h5>
-            <h1 id='head1' className='my-5'>"Luxury Without the
-              Lifetime Price Tag"</h1>
-            <p id='para1' className='py-3'>Zorucci is a luxury bridal wear brand based in Kerala, dedicated to curating exquisite bridal fashion. Since 2018, we’ve served thousands of brides with personalized styling, couture craftsmanship, and timeless bridal elegance. From traditional to modern, Zorucci combines heritage-rich details with contemporary design.</p>
-            <p id='para1' className='py-3'>With four showrooms across Kochi, Perinthalmanna, Kottakkal, and Edappal, we bring curated collections and expert stylists to brides across India.</p>
-          </div>
-        </div>
+            {/* Left side images */}
+            <Col md={6} className='pt-md-5'>
+              <Row>
+                <Col xs={6}>
+                  <Image src={about1} fluid alt="example" className='h-100' />
+                </Col>
+
+                <Col xs={6} className='d-flex flex-column'>
+                  <Image src={about2} fluid alt="example" className='w-75' />
+                  <Image src={about3} fluid alt="example" className='w-75 mt-2' />
+                </Col>
+              </Row>
+            </Col>
+
+            {/* Right side content */}
+            <Col md={6} className='text-md-start text-center pt-5'>
+              <h5>WHO WE ARE</h5>
+              <h1 id='head1' className='my-4'>
+                "Luxury Without the <br /> Lifetime Price Tag"
+              </h1>
+
+              <p id='para1' className='py-3'>
+                Zorucci is a luxury bridal wear brand based in Kerala, dedicated to curating exquisite bridal fashion. Since 2018, we’ve served thousands of brides with personalized styling, couture craftsmanship, and timeless bridal elegance. From traditional to modern, Zorucci combines heritage-rich details with contemporary design.
+              </p>
+
+              <p id='para1' className='py-3'>
+                With four showrooms across Kochi, Perinthalmanna, Kottakkal, and Edappal, we bring curated collections and expert stylists to brides across India.
+              </p>
+            </Col>
+
+          </Row>
+        </Container>
       </section>
 
       {/* collection page */}
@@ -115,7 +208,7 @@ function Landingpage() {
           <div className="col-md-4 text-light px-5 py-5 d-flex flex-column justify-content-center align-items-start" style={{ backgroundColor: "#0A3F36" }}>
             <p id='chead1' className='text-white'>OUR COLLECTIONS</p>
             <p id='chead2'>Bridal Lehangas</p>
-            <p id='para1'>Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes.</p>
+            <p id='cpara1'>Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes.</p>
           </div>
           <div className="col-md-8">
             <Image id='colectimg1' src={collect1} alt="" fluid style={{ width: "100%", height: "649px", objectFit: "cover" }} />
@@ -130,9 +223,9 @@ function Landingpage() {
             <Image id='collectimg2' src={collect2} alt="" fluid style={{ width: "100%", height: "649px", objectFit: "cover" }} />
           </div>
           <div className="col-md-4 px-5 py-5 text-light d-flex flex-column justify-content-center align-items-start order-md-2 order-1 " style={{ backgroundColor: "#0A3F36" }}>
-            <p id='chead1' className='text-white'>JEWELS BY ZORUCCIS</p>
-            <p id='chead2'>Complete Your Bridal Look</p>
-            <p id='para1'>Explore our jewelry rentals and find the perfect match for your outfit.</p>
+            <p id='jhead1' className='text-white'>JEWELS BY ZORUCCIS</p>
+            <p id='jhead2'>Complete Your Bridal Look</p>
+            <p id='jpara1'>Explore our jewelry rentals and find the perfect match for your outfit.</p>
           </div>
 
         </div>
@@ -147,18 +240,18 @@ function Landingpage() {
 
           </Col>
           <Col md={6} sm={12} >
-            <div className='align-items-center text-center py-5'>
-              <div className='text-md-end'>
-                <p id='chead1'>CUSTOM DESIGN SERVICES</p>
-                <p id='chead2'>Bespoke</p>
-                <p id='chead2'>Bridal Fashion</p>
+            <div className='align-items-center text-center py-5 mt-md-5'>
+              <div className='text-md-start'>
+                <p id='dhead1'>CUSTOM DESIGN SERVICES</p>
+                <h2 id='dhead2'>Bespoke <br /> Bridal Fashion</h2>
+               
               </div>
-              <div className='text-md-start py-5'>
-                <p id='para1'>Zorucci specializes in custom bridal wear design. Whether you envision a modified neckline, added embellishments, or a unique fabric, our designers bring your dream dress to life.</p>
-                <p id='para1'>From initial sketches to final fittings, your outfit is crafted exclusively for you.</p>
+              <div className='text-md-start py-3'>
+                <p id='dpara1'>Zorucci specializes in custom bridal wear design. Whether you envision a modified neckline, added embellishments, or a unique fabric, our designers bring your dream dress to life.</p>
+                <p id='dpara1'>From initial sketches to final fittings, your outfit is crafted exclusively for you.</p>
               </div>
               <div>
-                <Row className='text-md-start text-center ms-auto'>
+                <Row className='text-md-start text-center ms-auto mt-md-3'>
                   <Col className=''>
                     <Image id='designimg2' src={designimg2} alt='' fluid className='d-md-block d-none' style={{ width: "54px", height: "54px" }} />
                     <Image id='designimg2' src={designimg2} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "27px", height: "27px" }} />
@@ -170,8 +263,8 @@ function Landingpage() {
                     <p>Personal Fittings and Alterations</p>
                   </Col>
                   <Col className='order-md-2 order-1'>
-                    <Image id='designimg4' src={designimg4} alt='' fluid className='d-md-block d-none' style={{ width: "54px", height: "54px" }} />
-                    <Image id='designimg4' src={designimg4} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "27px", height: "27px" }} />
+                    <Image id='designimg4' src={designimg4} alt='' fluid className='d-md-block d-none ' style={{ width: "54px", height: "54px" }} />
+                    <Image id='designimg4' src={designimg4} alt='' fluid className='d-block d-md-none ms-5' style={{ width: "27px", height: "27px" }} />
                     <p>Premium Embellishments and Fabric Choices</p>
                   </Col>
                 </Row>
@@ -293,81 +386,81 @@ function Landingpage() {
 
       {/* contact page */}
       <section id='contact'>
-        <div style={{backgroundImage: `url(${contactimg1})`,backgroundSize: "cover",backgroundPosition: "70% 40%",width: "100%",height: "655px",}}>
+        <div style={{ backgroundImage: `url(${contactimg1})`, backgroundSize: "cover", backgroundPosition: "70% 40%", width: "100%", height: "655px", }}>
           <Row className='py-5 mx-5'>
-          <Col md={6} sm={12}>
+            <Col md={6} sm={12}>
 
-          </Col>
-          <Col md={6} sm={12}>
-            <Card className=" text-white text-md-start text-center p-4" style={{ backgroundColor: "#0A3F36E0" }}>
-              <Card.Text>
-                <p id='Chead1'>CONTACT US</p>
-              </Card.Text>
-              <Card.Text>
-                <p id='Chead2'>We’d love to <br />
-                  hear from you</p>
-              </Card.Text>
-               <form action="" className='d-flex flex-column'>
-                 <input type="text" placeholder='Full Name' className='p-2 border-0 mb-2' style={{backgroundColor: "rgba(0, 0, 0, 0.12)" ,borderRadius:"10px" }}/>
-                 <input type="text" placeholder='Phone Number' className='p-2 border-0 mb-2' style={{backgroundColor: "rgba(0, 0, 0, 0.12)" ,borderRadius:"10px" }}/>
-                 <input type="text" placeholder='Email' className='p-2 border-0 mb-2' style={{backgroundColor: "rgba(0, 0, 0, 0.12)" ,borderRadius:"10px" }}/>
-                 <textarea name="" id="" placeholder='Message' className='py-3 px-2 border-0 mb-2' style={{backgroundColor: "rgba(0, 0, 0, 0.12)" ,borderRadius:"10px" }}></textarea>            
-               </form>
-               <button className='btn btn-light w-50 mx-auto'><span style={{color:"#0A3F36", fontSize:"20px"}}>Submit</span></button>
-            </Card>
-          </Col>
-        </Row>
+            </Col>
+            <Col md={6} sm={12}>
+              <Card className=" text-white text-md-start text-center p-4" style={{ backgroundColor: "#0A3F36E0" }}>
+                <Card.Text>
+                  <p id='Chead1'>CONTACT US</p>
+                </Card.Text>
+                <Card.Text>
+                  <p id='Chead2' >We’d love to <br />
+                    hear from you</p>
+                </Card.Text>
+                <form action="" className='d-flex flex-column contact-form'>
+                  <input type="text" placeholder='Full Name' className='p-2 border-0 mb-2' style={{ backgroundColor: "rgba(0, 0, 0, 0.12)", borderRadius: "10px" }} />
+                  <input type="text" placeholder='Phone Number' className='p-2 border-0 mb-2' style={{ backgroundColor: "rgba(0, 0, 0, 0.12)", borderRadius: "10px" }} />
+                  <input type="text" placeholder='Email' className='p-2 border-0 mb-2' style={{ backgroundColor: "rgba(0, 0, 0, 0.12)", borderRadius: "10px" }} />
+                  <textarea name="" id="" placeholder='Message' className='py-3 px-2 border-0 mb-2' style={{ backgroundColor: "rgba(0, 0, 0, 0.12)", borderRadius: "10px" }}></textarea>
+                </form>
+                <button className='btn btn-light w-50 mx-auto'><span style={{ color: "#0A3F36", fontSize: "20px" }}>Submit</span></button>
+              </Card>
+            </Col>
+          </Row>
         </div>
-        
+
       </section>
 
       {/* faq page */}
       <Container>
         <Row className='mt-5 g-0'>
           <Col md={4} sm={12} >
-          <div className='text-md-start text-center'>
-            <p id='chead1'>FAQ</p>
-          <p id='chead2'>For a seamless <br /> bridal experience</p>
-          </div>
+            <div className='text-md-start text-center'>
+              <p id='chead1'>FAQ</p>
+              <p id='chead2'>For a seamless <br /> bridal experience</p>
+            </div>
           </Col>
           <Col md={8} sm={12} className=''>
-          <ul id='faqlist'>
-            <li>
-              <div className='d-flex justify-content-between'>
-                <p>Where can I buy premium bridal lehengas in Kerala?</p>
-                <span className='px-3'>+</span>
-              </div>
-            </li>
-            <hr />
-            <li>
-              <div className='d-flex justify-content-between'>
-                <p>Does Zorucci offer custom bridal outfits?</p>
-                <span className='px-3'>+</span>
-              </div>
-            </li>
-            <hr />
-            <li>
-              <div className='d-flex justify-content-between'>
-                <p>Do you offer wedding gowns for Christian ceremonies?</p>
-                <span className='px-3'>+</span>
-              </div>
-            </li>
-            <hr />
-            <li>
-              <div className='d-flex justify-content-between'>
-                <p>What bridal outfit types does Zorucci offer?</p>
-                <span className='px-3'>+</span>
-              </div>
-            </li>
-            <hr />
-            <li>
-              <div className='d-flex justify-content-between'>
-                <p>Can I book an appointment online or by phone?</p>
-                <span className='px-3'>+</span>
-              </div>
-            </li>
-            <hr />
-          </ul>
+            <ul id='faqlist'>
+              <li>
+                <div className='d-flex justify-content-between'>
+                  <p>Where can I buy premium bridal lehengas in Kerala?</p>
+                  <span className='px-3'>+</span>
+                </div>
+              </li>
+              <hr />
+              <li>
+                <div className='d-flex justify-content-between'>
+                  <p>Does Zorucci offer custom bridal outfits?</p>
+                  <span className='px-3'>+</span>
+                </div>
+              </li>
+              <hr />
+              <li>
+                <div className='d-flex justify-content-between'>
+                  <p>Do you offer wedding gowns for Christian ceremonies?</p>
+                  <span className='px-3'>+</span>
+                </div>
+              </li>
+              <hr />
+              <li>
+                <div className='d-flex justify-content-between'>
+                  <p>What bridal outfit types does Zorucci offer?</p>
+                  <span className='px-3'>+</span>
+                </div>
+              </li>
+              <hr />
+              <li>
+                <div className='d-flex justify-content-between'>
+                  <p>Can I book an appointment online or by phone?</p>
+                  <span className='px-3'>+</span>
+                </div>
+              </li>
+              <hr />
+            </ul>
           </Col>
         </Row>
       </Container>
