@@ -67,7 +67,7 @@ function Landingpage() {
           style={{
             top: "63%",
             backgroundColor: "white",
-            width: "76%",
+            width: "80%",
             borderTopRightRadius: "200px",
             height: "488px",
           }}
@@ -150,7 +150,7 @@ function Landingpage() {
                   alt=""
                   fluid
                   style={{
-                    width: "467px",
+                    width: "480px",
                     height: "571px",
                     objectFit: "cover",
                     borderTopRightRadius: "200px",
@@ -186,7 +186,7 @@ function Landingpage() {
             <Col md={6} className='text-md-start text-center pt-5'>
               <h5>WHO WE ARE</h5>
               <h1 id='head1' className='my-4'>
-                "Luxury Without the <br /> Lifetime Price Tag"
+                Luxury Without the <br /> Lifetime Price Tag
               </h1>
 
               <p id='para1' className='py-3'>
@@ -255,17 +255,17 @@ function Landingpage() {
                   <Col className=''>
                     <Image id='designimg2' src={designimg2} alt='' fluid className='d-md-block d-none' style={{ width: "54px", height: "54px" }} />
                     <Image id='designimg2' src={designimg2} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "27px", height: "27px" }} />
-                    <p>Sketch-to-Stitch Customization</p>
+                    <p id='dpara1'>Sketch-to-Stitch Customization</p>
                   </Col>
                   <Col className='order-md-1 order-2'>
                     <Image id='designimg3' src={designimg3} alt='' fluid className='d-md-block d-none' style={{ width: "54px", height: "54px" }} />
                     <Image id='designimg3' src={designimg3} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "27px", height: "27px" }} />
-                    <p>Personal Fittings and Alterations</p>
+                    <p id='dpara1'>Personal Fittings <br /> and Alterations</p>
                   </Col>
                   <Col className='order-md-2 order-1'>
                     <Image id='designimg4' src={designimg4} alt='' fluid className='d-md-block d-none ' style={{ width: "54px", height: "54px" }} />
                     <Image id='designimg4' src={designimg4} alt='' fluid className='d-block d-md-none ms-5' style={{ width: "27px", height: "27px" }} />
-                    <p>Premium Embellishments and Fabric Choices</p>
+                    <p id='dpara1'>Premium Embellishments and Fabric Choices</p>
                   </Col>
                 </Row>
               </div>
@@ -283,18 +283,18 @@ function Landingpage() {
         <Row className='gap-md-0 gap-4'>
 
           <Col md={3} sm={12}>
-            <Card className='text-white' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
+            <Card className='' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
               <Card.Body>
                 <Card.Title className='text-center my-3' id='lhead'>Zorucci Kochi</Card.Title>
                 <div className='d-flex py-2'>
-                  <span><HiOutlineLocationMarker /></span>
-                  <Card.Text id='lpara' className='ms-2'>
+                  <span id='lpara1'><HiOutlineLocationMarker /></span>
+                  <Card.Text id='lpara1' className='ms-2'>
                     Metro Piller No 366, Chilton Tower, Road, Koonamthai, Edappally, Kochi, Kerala 682024
                   </Card.Text>
                 </div>
                 <div className='d-flex mt-2'>
-                  <span><IoIosTimer /></span>
-                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <span id='lpara1'><IoIosTimer /></span>
+                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
@@ -302,38 +302,18 @@ function Landingpage() {
           </Col>
 
           <Col md={3} sm={12}>
-            <Card className='text-white' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
-              <Card.Body>
-                <Card.Title className='text-center my-3' id='lhead'>Zorucci Perinthalmanna</Card.Title>
-                <div className='d-flex py-2'>
-                  <span><HiOutlineLocationMarker /></span>
-                  <Card.Text id='lpara' className='ms-2'>
-                    Sahara Complex, Mysuru - Ooty Rd, Valiyangadi, Perinthalmanna, Kerala 679322
-                  </Card.Text>
-                </div>
-                <div className='d-flex mt-2'>
-                  <span><IoIosTimer /></span>
-                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
-                  </Card.Text>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-
-
-          <Col md={3} sm={12}>
-            <Card className='text-white' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
+            <Card className='' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
               <Card.Body>
                 <Card.Title className='text-center my-3' id='lhead'>Zorucci Edappal</Card.Title>
                 <div className='d-flex py-2'>
-                  <span><HiOutlineLocationMarker /></span>
-                  <Card.Text id='lpara' className='ms-2'>
+                  <span id='lpara1'><HiOutlineLocationMarker /></span>
+                  <Card.Text id='lpara1' className='ms-2'>
                     Calicut Rd, Edappal, Kerala 679576
                   </Card.Text>
                 </div>
                 <div className='d-flex mt-2'>
-                  <span><IoIosTimer /></span>
-                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <span id='lpara1'><IoIosTimer /></span>
+                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
@@ -341,23 +321,43 @@ function Landingpage() {
           </Col>
 
           <Col md={3} sm={12}>
-            <Card className='text-white' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
+            <Card className='' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
               <Card.Body>
                 <Card.Title className='text-center my-3' id='lhead'>Zorucci Kottakkal</Card.Title>
                 <div className='d-flex py-2'>
-                  <span><HiOutlineLocationMarker /></span>
-                  <Card.Text id='lpara' className='ms-2'>
+                  <span id='lpara1'><HiOutlineLocationMarker /></span>
+                  <Card.Text id='lpara1' className='ms-2'>
                     Zabeel complex Changuvetty, Kottakkal, Kerala 676503
                   </Card.Text>
                 </div>
                 <div className='d-flex mt-2'>
-                  <span><IoIosTimer /></span>
-                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <span id='lpara1'><IoIosTimer /></span>
+                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
             </Card>
           </Col>
+
+          <Col md={3} sm={12}>
+            <Card className='' style={{ width: '100%', backgroundColor: "#0A3F36", height: "225px" }}>
+              <Card.Body>
+                <Card.Title className='text-center my-3' id='lhead'>Zorucci Perinthalmanna</Card.Title>
+                <div className='d-flex py-2'>
+                  <span id='lpara1'><HiOutlineLocationMarker /></span>
+                  <Card.Text id='lpara1' className='ms-2'>
+                    Sahara Complex, Mysuru - Ooty Rd, Valiyangadi, Perinthalmanna, Kerala 679322
+                  </Card.Text>
+                </div>
+                <div className='d-flex mt-2'>
+                  <span id='lpara1'><IoIosTimer /></span>
+                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  </Card.Text>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+
 
           <Row className='mt-5 gap-0'>
             <Col md={6} sm={12} className='mt-md-3 text-center text-md-start'>
