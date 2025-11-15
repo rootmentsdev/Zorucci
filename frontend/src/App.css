@@ -7,6 +7,7 @@ Header , Footer {
     font-family: "DM Sans", sans-serif;
 }
 
+
 /* landing page */
 #list{
     list-style: none;
@@ -25,6 +26,8 @@ Header , Footer {
     text-align: justify;
 }
 
+
+
 /* collection page */
 #chead1{
     font-family: "DM Sans", sans-serif;
@@ -37,6 +40,7 @@ Header , Footer {
          font-weight: 400;
          font-size: 42px;
 }
+
 
 /* location page */
 #lhead{
@@ -68,7 +72,10 @@ Header , Footer {
 #faqlist{
   list-style: none;
 }
-/* responsive */
+
+
+
+/* mobile screen responsive */
 @media (max-width: 768px) {
   #head1 {
     font-size: 40px;
@@ -110,16 +117,84 @@ Header , Footer {
   }
 
   #Chead2{
- 
-         font-size: 28px;
-}
+   font-size: 28px;
+   }
 
   #Chead1{
-
   font-size: 16px;
-  
-
+   }
 }
 
+
+/* medium device responsive */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .white-box {
+    position: relative !important;
+    transform: none !important;
+    top: 20% !important;
+    width: 90% !important;
+    height: auto !important;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 40px 20px;
+  }
+
+  #homeimg2 {
+    transform: none !important;
+  }
+
+  #homeimg2 img {
+    width: 100% !important;
+    height: auto !important;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    object-fit: cover;
+  }
+
+  #head1 {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  #para1 {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #homebtn3 {
+    width: 50% !important;
+  }
+
+  #greenbg {
+    height: 650px;
+  }
+
+  #chead1{
+    font-size: 12px;
+  }
+  
+  #Chead2{
+   font-size: 28px;
+   }
+  #Chead1{
+  font-size: 16px;
+   }
+
+   #lhead{
+  font-family: "Noto Serif", serif;
+         font-weight: 200;
+         font-size: 16px;
+  }
+  #lpara{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-size: 10px;
+  }
+
+  #locbtn1,
+  #locbtn2 {
+    width: 100% !important; 
+  }
 
 }

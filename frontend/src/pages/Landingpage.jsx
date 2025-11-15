@@ -201,7 +201,7 @@ function Landingpage() {
                 </div>
                 <div className='d-flex mt-2'>
                   <span><IoIosTimer /></span>
-                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
@@ -220,7 +220,7 @@ function Landingpage() {
                 </div>
                 <div className='d-flex mt-2'>
                   <span><IoIosTimer /></span>
-                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
@@ -240,7 +240,7 @@ function Landingpage() {
                 </div>
                 <div className='d-flex mt-2'>
                   <span><IoIosTimer /></span>
-                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
@@ -259,7 +259,7 @@ function Landingpage() {
                 </div>
                 <div className='d-flex mt-2'>
                   <span><IoIosTimer /></span>
-                  <Card.Text id='lpara1' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
+                  <Card.Text id='lpara' className='ms-2'>Mon-Sun | 10:00am - 08:30pm
                   </Card.Text>
                 </div>
               </Card.Body>
@@ -271,18 +271,18 @@ function Landingpage() {
               <p className='mt-4' id='chead1'>WALK IN OR BOOK YOUR BRIDAL STYLING APPOINTMENT.</p>
             </Col>
             <Col md={3} sm={12} className=''>
-              <button id='homebtn' className='btn py-md-3 d-flex d-md-block d-none' style={{ width: "65%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
+              <button id='locbtn1' className='btn py-md-3 d-flex d-md-block d-none' style={{ width: "65%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
                 <span><IoLogoWhatsapp className='me-4' /></span> Whatsapp<span className='ms-3'><MdArrowOutward /></span>
               </button>
-              <button id='homebtn' className='btn py-md-3 text-white d-md-none d-block mx-auto' style={{ width: "80%", backgroundColor: "#0A3F36" }}>
+              <button id='locbtn1' className='btn py-md-3 text-white d-md-none d-block mx-auto' style={{ width: "80%", backgroundColor: "#0A3F36" }}>
                 <span><IoLogoWhatsapp className='me-4' /></span> Whatsapp<span className='ms-3'><MdArrowOutward /></span>
               </button>
             </Col>
             <Col md={3} sm={12} >
-              <button id='homebtn' className='btn py-md-3 d-flex d-md-block d-none' style={{ width: "75%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
+              <button id='locbtn2' className='btn py-md-3 d-flex d-md-block d-none' style={{ width: "75%", border: "none", borderBottom: "solid", borderRadius: "0px", color: "#5A2A0B" }}>
                 <span><FaPhoneAlt className='me-3' /></span>+91 62350 31144<span className='ms-3'><MdArrowOutward /></span>
               </button>
-              <button id='homebtn' className='btn py-md-3 d-md-none d-block mx-auto mt-3' style={{ width: "80%", backgroundColor: "rgba(0, 0, 0, 0.12)", color: "#5A2A0B" }}>
+              <button id='locbtn2' className='btn py-md-3 d-md-none d-block mx-auto mt-3' style={{ width: "80%", backgroundColor: "rgba(0, 0, 0, 0.12)", color: "#5A2A0B" }}>
                 <span><FaPhoneAlt className='me-3' /></span>+91 62350 31144<span className='ms-3'><MdArrowOutward /></span>
               </button>
             </Col>
