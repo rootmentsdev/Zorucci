@@ -96,8 +96,8 @@ function Footer() {
             <h6 className='ms-0'>QUICK LINKS</h6>
             <ul id='list' className='p-0 m-0'>
               <li className='my-2'><a href="#herosection">Home</a></li>
-              <li className='my-2'><a href="#about">About Zorucci</a></li>
-              <li className='my-2'><a href="#Collections">Collections</a></li>
+              <li className='my-2'><a href="#about">About</a></li>
+              <li className='my-2'><a href="#collections">Collections</a></li>
               <li className='my-2'>How it works?</li>
               <li className='my-2'>Why rent?</li>
             </ul>
