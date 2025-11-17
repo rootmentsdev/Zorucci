@@ -1,10 +1,11 @@
 // React & Bootstrap Core
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import { Image } from 'react-bootstrap';
+import { useState } from "react";
 
 // Layout Components
 import Header from '../components/Header';
@@ -20,7 +21,15 @@ import about3 from '../images/about3.png';
 
 // Collection Section Images
 import collect1 from '../images/collect1.png';
-import collect2 from '../images/collect2.png';
+import collectionimg1 from '../images/collectionimg1.jpg'
+import collectionimg2 from '../images/collectionimg2.jpg'
+import collectionimg3 from '../images/collectionimg3.jpg'
+import collectionimg4 from '../images/collectionimg4.jpg'
+import collectionimg5 from '../images/collectionimg5.jpg'
+
+
+// Jewelry Section Images
+import jewelryimg2 from '../images/jewelryimg2.png';
 
 // Design Section Images
 import designimg1 from '../images/designimg1.png';
@@ -41,9 +50,49 @@ import { MdArrowOutward } from "react-icons/md";
 
 
 function Landingpage() {
+
+  const images = [collectionimg1, collectionimg2, collectionimg3, collectionimg4, collectionimg5]
+  const [imagesArr, setImagesArr] = useState(images);
+  const handleSliceClick = (clickedIndex) => {
+    if (clickedIndex === 0) return;
+    const newArr = [...imagesArr];
+    const clickedImage = newArr.splice(clickedIndex, 1)[0];
+    newArr.unshift(clickedImage);
+    setImagesArr(newArr);
+  };
+
+  const faq = [
+    {
+      q: "Where can I buy premium bridal lehengas in Kerala?",
+      a: "You can explore Zorucci’s designer bridal lehengas available exclusively at our Kerala boutique."
+    },
+    {
+      q: "Does Zorucci offer custom bridal outfits?",
+      a: "Yes, we provide full customization options for bridal lehengas, sarees, and gowns."
+    },
+    {
+      q: "Do you offer wedding gowns for Christian ceremonies?",
+      a: "Absolutely! We have elegant Christian wedding gowns tailored for modern brides."
+    },
+    {
+      q: "What bridal outfit types does Zorucci offer?",
+      a: "We offer lehengas, sarees, gowns, engagement outfits, and reception wear."
+    },
+    {
+      q: "Can I book an appointment online or by phone?",
+      a: "Yes, you can book through our website or contact us directly via phone."
+    }
+  ];
+
+  const [faqindex, setFaqIndex] = useState(null);
+
+  const toggleFaq = (i) => {
+    setFaqIndex(faqindex === i ? null : i);
+  };
+
   return (
     <>
-      
+
       {/* landing page */}
       <section id='herosection'>
         <div className='w-100 position-relative'>
@@ -210,9 +259,29 @@ function Landingpage() {
             <p id='chead2'>Bridal Lehangas</p>
             <p id='cpara1'>Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes.</p>
           </div>
-          <div className="col-md-8">
-            <Image id='colectimg1' src={collect1} alt="" fluid style={{ width: "100%", height: "649px", objectFit: "cover" }} />
+
+          <div className="gallery-wrapper col-md-8 d-flex overflow-hidden" style={{ height: "650px" }}>
+
+            {/* Main Image (Always first item) */}
+            <div className="main-image">
+              <img src={imagesArr[0]} alt="" />
+            </div>
+
+            {/* Slices */}
+            <div className="slice-group">
+              {imagesArr.slice(1).map((img, idx) => (
+                <div
+                  className="slice"
+                  key={idx}
+                  onClick={() => handleSliceClick(idx + 1)}
+                >
+                  <img src={img} alt="" />
+                </div>
+              ))}
+            </div>
+
           </div>
+
         </div>
       </section>
 
@@ -220,7 +289,7 @@ function Landingpage() {
       <section id='jewelry'>
         <div className="row g-0">
           <div className="col-md-8 order-md-1 order-2">
-            <Image id='collectimg2' src={collect2} alt="" fluid style={{ width: "100%", height: "649px", objectFit: "cover" }} />
+            <Image id='collectimg2' src={jewelryimg2} alt="" fluid style={{ width: "100%", height: "649px", objectFit: "cover" }} />
           </div>
           <div className="col-md-4 px-5 py-5 text-light d-flex flex-column justify-content-center align-items-start order-md-2 order-1 " style={{ backgroundColor: "#0A3F36" }}>
             <p id='jhead1' className='text-white'>JEWELS BY ZORUCCIS</p>
@@ -244,7 +313,7 @@ function Landingpage() {
               <div className='text-md-start'>
                 <p id='dhead1'>CUSTOM DESIGN SERVICES</p>
                 <h2 id='dhead2'>Bespoke <br /> Bridal Fashion</h2>
-               
+
               </div>
               <div className='text-md-start py-3'>
                 <p id='dpara1'>Zorucci specializes in custom bridal wear design. Whether you envision a modified neckline, added embellishments, or a unique fabric, our designers bring your dream dress to life.</p>
@@ -423,49 +492,29 @@ function Landingpage() {
               <p id='chead2'>For a seamless <br /> bridal experience</p>
             </div>
           </Col>
+
           <Col md={8} sm={12} className=''>
             <ul id='faqlist'>
-              <li>
-                <div className='d-flex justify-content-between'>
-                  <p>Where can I buy premium bridal lehengas in Kerala?</p>
-                  <span className='px-3'>+</span>
-                </div>
-              </li>
-              <hr />
-              <li>
-                <div className='d-flex justify-content-between'>
-                  <p>Does Zorucci offer custom bridal outfits?</p>
-                  <span className='px-3'>+</span>
-                </div>
-              </li>
-              <hr />
-              <li>
-                <div className='d-flex justify-content-between'>
-                  <p>Do you offer wedding gowns for Christian ceremonies?</p>
-                  <span className='px-3'>+</span>
-                </div>
-              </li>
-              <hr />
-              <li>
-                <div className='d-flex justify-content-between'>
-                  <p>What bridal outfit types does Zorucci offer?</p>
-                  <span className='px-3'>+</span>
-                </div>
-              </li>
-              <hr />
-              <li>
-                <div className='d-flex justify-content-between'>
-                  <p>Can I book an appointment online or by phone?</p>
-                  <span className='px-3'>+</span>
-                </div>
-              </li>
-              <hr />
+              {faq.map((item, i) => (
+                <li key={i}>
+
+                  <div className='d-flex justify-content-between faq-question'>
+                    <p>{item.q}</p>
+                    <span className='px-3'onClick={() => toggleFaq(i)}>{faqindex === i ? "-" : "+"}</span>
+                  </div>
+
+                  <div className={`faq-answer ${faqindex === i ? "open" : "close"}`}>
+                    <p>{item.a}</p>
+                  </div>
+
+                  <hr />
+                </li>
+              ))}
             </ul>
+
           </Col>
         </Row>
       </Container>
-
-
 
     </>
   )
