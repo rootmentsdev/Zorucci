@@ -6,6 +6,8 @@ import logo2 from '../images/logo2.png'
 import { Image } from 'react-bootstrap';
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 
 
@@ -93,9 +95,9 @@ function Footer() {
           <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end'>
             <h6 className='ms-0'>QUICK LINKS</h6>
             <ul id='list' className='p-0 m-0'>
-              <li className='my-2'>Home</li>
-              <li className='my-2'>About Zorucci</li>
-              <li className='my-2'>Collections</li>
+              <li className='my-2'><a href="#herosection">Home</a></li>
+              <li className='my-2'><a href="#about">About Zorucci</a></li>
+              <li className='my-2'><a href="#Collections">Collections</a></li>
               <li className='my-2'>How it works?</li>
               <li className='my-2'>Why rent?</li>
             </ul>
@@ -105,23 +107,22 @@ function Footer() {
           <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end'>
             <h6 className='ms-0'>INFORMATIONS</h6>
             <ul id='list' className='p-0 m-0'>
-              <li className='my-2'>Location</li>
-              <li className='my-2'>FAQs</li>
+              <li className='my-2'><a href="#location">Location</a></li>
+              <li className='my-2'><a href="#faq"></a>FAQs</li>
               <li className='my-2'>Privacy Policy</li>
               <li className='my-2'>Terms & Conditions</li>
-              <li className='my-2'>Contact</li>
+              <li className='my-2'><a href="#contact">Contact</a></li>
             </ul>
           </Col>
 
           {/* Column 4 */}
-          <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end'>
+          <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end pb-3'>
             <h6 className='ms-0'>CONTACT</h6>
             <ul id='list' className='p-0 m-0'>
               <li className='my-2'>+91 9874561230</li>
               <li className='my-2'>zorucci@gmail.com</li>
-              <li className='my-2'>Store Locations</li>
-              <li className='my-2'>Instagram</li>
-              <li className='my-2'>LinkedIn</li>
+              <li className='my-2'><a href="https://www.instagram.com/zorucci?igsh=MXh3dzJnczQ1MDRkMA=="><FaSquareInstagram className='fs-2' /></a></li>
+              <li className='my-2'><FaLinkedin className='fs-2'/></li>
             </ul>
           </Col>
 

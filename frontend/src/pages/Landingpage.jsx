@@ -490,7 +490,7 @@ function Landingpage() {
       </section>
 
       {/* faq page */}
-      <Container>
+      <Container id='faq'>
         <Row className='mt-5 g-0'>
           <Col md={4} sm={12} >
             <div className='text-md-start text-center'>

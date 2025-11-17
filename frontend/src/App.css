@@ -19,8 +19,13 @@ Header , Footer {
 /* landing page */
 #list{
     list-style: none;
+    cursor: pointer;
 }
 
+#list a{
+ text-decoration: none;
+ color: black;
+}
 #head1{
     font-family: "Noto Serif", serif;
     font-weight: 400;
