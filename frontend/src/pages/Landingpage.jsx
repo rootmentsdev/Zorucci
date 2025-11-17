@@ -20,7 +20,6 @@ import about2 from '../images/about2.png';
 import about3 from '../images/about3.png';
 
 // Collection Section Images
-import collect1 from '../images/collect1.png';
 import collectionimg1 from '../images/collectionimg1.jpg'
 import collectionimg2 from '../images/collectionimg2.jpg'
 import collectionimg3 from '../images/collectionimg3.jpg'
@@ -488,8 +487,8 @@ function Landingpage() {
         <Row className='mt-5 g-0'>
           <Col md={4} sm={12} >
             <div className='text-md-start text-center'>
-              <p id='chead1'>FAQ</p>
-              <p id='chead2'>For a seamless <br /> bridal experience</p>
+              <p id='fhead1'>FAQ</p>
+              <p id='fhead2'>For a seamless <br /> bridal experience</p>
             </div>
           </Col>
 
