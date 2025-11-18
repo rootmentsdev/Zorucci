@@ -16,9 +16,9 @@ function Home() {
       <Designpage />
       <Collectionpage />
       <Jewelrypage />
-      <Fapage />
       <Locationpage />
       <Contactpage />
+      <Fapage />
     </>
   )
 }
