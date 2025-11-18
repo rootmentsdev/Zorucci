@@ -4,11 +4,38 @@ import logo from '../images/logo.png'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useEffect, useState } from "react";
+import "./Header.css";
+
 
 function Header() {
+  const [hidden, setHidden] = useState(false);
+  const [prevScroll, setPrevScroll] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > prevScroll && currentScroll > 100) {
+        // scrolling down -> hide header
+        setHidden(true);
+      } else {
+        // scrolling up -> show header
+        setHidden(false);
+      }
+
+      setPrevScroll(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScroll]);
+
+
     return (
         <>
-            <Navbar expand="lg" className="bg-black bg-opacity-25" fixed="top">
+            <header  className={`main-header ${hidden ? "hide" : ""}`}>
+                <Navbar expand="lg" className="bg-black bg-opacity-25">
                 <Container className="d-flex justify-content-between align-items-center">
                     <Image src={logo} alt="" fluid className="d-block d-lg-none" style={{ width: "150px" }}/>
             
@@ -32,6 +59,7 @@ function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            </header>
 
 
         </>
