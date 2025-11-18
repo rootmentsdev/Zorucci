@@ -11,12 +11,12 @@ import Locationpage from "./Locationpage";
 function Home() {
   return (
     <>
-    <Landingpage/>
+      <Landingpage />
       <Aboutpage />
       <Designpage />
       <Collectionpage />
       <Jewelrypage />
-       <Fapage/>
+      <Fapage />
       <Locationpage />
       <Contactpage />
     </>
