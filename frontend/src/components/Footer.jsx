@@ -25,16 +25,10 @@ function Footer() {
                   src={logo2}
                   alt=""
                   fluid
-                  className="mb-3 pb-3 mx-auto mx-md-0"
+                  className=" mx-auto mx-md-0"
                   style={{ width: "180px" }}
                 />
-              </li>
-              <li className='py-3'>
-                <FaPhoneAlt className='me-3' /> +91 62350 31144
-              </li>
-              <li className='py-3'>
-                <RiWhatsappFill className='me-3' /> Whatsapp
-              </li>
+              </li>    
             </ul>
           </Col>
 

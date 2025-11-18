@@ -123,12 +123,12 @@ function Locationpage() {
           <Col md={3} sm={12}>
             <button id='locbtn2' className='btn py-md-3 d-flex d-md-block d-none'
               style={{ width: "75%", borderBottom: "solid", borderRadius: 0, color: "#5A2A0B" }}>
-              <FaPhoneAlt className='me-3' /> +91 62350 31144 <MdArrowOutward className='ms-3' />
+              <FaPhoneAlt className='me-3' /> <a style={{textDecoration:"none",color:"black"}} href="tel:+917593844448">+91 7593844448</a><MdArrowOutward className='ms-3' />
             </button>
 
             <button id='locbtn2' className='btn py-md-3 d-md-none d-block mx-auto mt-3'
               style={{ width: "80%", backgroundColor: "rgba(0, 0, 0, 0.12)", color: "#5A2A0B" }}>
-              <FaPhoneAlt className='me-3' /> +91 62350 31144 <MdArrowOutward className='ms-3' />
+              <FaPhoneAlt className='me-3' /> <a style={{textDecoration:"none",color:"black"}} href="tel:+917593844448">+91 7593844448</a><MdArrowOutward className='ms-3' />
             </button>
           </Col>
         </Row>

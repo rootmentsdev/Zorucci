@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import contactimg1 from '../images/contactimg1.jpg';
 import '../styles/contact.css';
-import '../styles/responsive.css';
+import '../styles/responsive.css'
 
 function Contactpage() {
   const [formData, setFormData] = useState({
@@ -66,13 +66,13 @@ function Contactpage() {
           <Col md={6} sm={12}>
             <Card className="text-white text-md-start text-center p-4" style={{ backgroundColor: "#0A3F36E0" }}>
               <Card.Text>
-                <p id='Chead1'>CONTACT US</p>
+                <span id='Contacthead1'>CONTACT US</span>
               </Card.Text>
               <Card.Text>
-                <p id='Chead2'>
+                <span id='Contacthead2'>
                   We’d love to <br />
                   hear from you
-                </p>
+                </span>
               </Card.Text>
               <form onSubmit={handleSubmit} className='d-flex flex-column contact-form'>
                 <input

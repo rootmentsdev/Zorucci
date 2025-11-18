@@ -90,7 +90,8 @@ function Landingpage() {
                     color: "#5A2A0B",
                   }}
                 >
-                  Book Appointment{" "}
+                  <a style={{textDecoration:"none",color:"black"}} href="tel:+917593844448"> Book Appointment{" "}</a>
+                 
                   <span>
                     <MdArrowOutward className='ms-5 mb-1' />
                   </span>
