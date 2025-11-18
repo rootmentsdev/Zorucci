@@ -49,8 +49,9 @@ import { MdArrowOutward } from "react-icons/md";
 
 
 function Landingpage() {
+   
 
-  // 1️⃣ FIRST — Arrays
+
   const images = [collectionimg1, collectionimg2, collectionimg3, collectionimg4, collectionimg5];
 
   const text = [
@@ -81,11 +82,11 @@ function Landingpage() {
     }
   ];
 
-  // 2️⃣ THEN — States
+  
   const [imagesArr, setImagesArr] = useState(images);
   const [textArr, setTextArr] = useState(text);
 
-  // 3️⃣ THEN — Handlers
+  
   const handleSliceClick = (clickedIndex) => {
     if (clickedIndex === 0) return;
 
@@ -107,23 +108,23 @@ function Landingpage() {
   const faq = [
     {
       q: "Where can I buy premium bridal lehengas in Kerala?",
-      a: "You can explore Zorucci’s designer bridal lehengas available exclusively at our Kerala boutique."
+      a: "Visit any of Zorucci’s four showrooms for a curated collection of luxury bridal lehengas."
     },
     {
       q: "Does Zorucci offer custom bridal outfits?",
-      a: "Yes, we provide full customization options for bridal lehengas, sarees, and gowns."
+      a: "Yes! We offer full customization including design modifications, fabric selection, and fittings."
     },
     {
       q: "Do you offer wedding gowns for Christian ceremonies?",
-      a: "Absolutely! We have elegant Christian wedding gowns tailored for modern brides."
+      a: "Yes. Zorucci specializes in elegant wedding gowns for Christian weddings and receptions."
     },
     {
       q: "What bridal outfit types does Zorucci offer?",
-      a: "We offer lehengas, sarees, gowns, engagement outfits, and reception wear."
+      a: "Designer bridal lehengas, custom wedding gowns, and premium bridal sarees."
     },
     {
       q: "Can I book an appointment online or by phone?",
-      a: "Yes, you can book through our website or contact us directly via phone."
+      a: "Yes. Call or WhatsApp +91 6235031144 to book your appointment."
     }
   ];
 
