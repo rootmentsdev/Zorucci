@@ -50,16 +50,60 @@ import { MdArrowOutward } from "react-icons/md";
 
 function Landingpage() {
 
-  const images = [collectionimg1, collectionimg2, collectionimg3, collectionimg4, collectionimg5]
+  // 1️⃣ FIRST — Arrays
+  const images = [collectionimg1, collectionimg2, collectionimg3, collectionimg4, collectionimg5];
+
+  const text = [
+    {
+      h1: "OUR COLLECTIONS",
+      h2: "Bridal Lehangas",
+      p: "Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes."
+    },
+    {
+      h1: "OUR COLLECTIONS",
+      h2: "Wedding Gowns",
+      p: "Zorucci wedding gowns are crafted with delicate lace, flowy tulle, and luxurious satin. Perfect for church weddings or destination nuptials. Designed for elegance, fit for a queen."
+    },
+    {
+      h1: "OUR COLLECTIONS",
+      h2: "Bridal Sarees",
+      p: "From Kanjivaram silk to embroidered net, our bridal sarees fuse cultural authenticity with haute couture. Fully customizable, tailored to your story."
+    },
+    {
+      h1: "OUR COLLECTIONS",
+      h2: "Brides Maid Dresses",
+      p: "Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes."
+    },
+    {
+      h1: "OUR COLLECTIONS",
+      h2: "Bridal Lehangas",
+      p: "Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes."
+    }
+  ];
+
+  // 2️⃣ THEN — States
   const [imagesArr, setImagesArr] = useState(images);
+  const [textArr, setTextArr] = useState(text);
+
+  // 3️⃣ THEN — Handlers
   const handleSliceClick = (clickedIndex) => {
     if (clickedIndex === 0) return;
+
     const newArr = [...imagesArr];
     const clickedImage = newArr.splice(clickedIndex, 1)[0];
     newArr.unshift(clickedImage);
+
     setImagesArr(newArr);
+
+    const newText = [...textArr];
+    const clickedText = newText.splice(clickedIndex, 1)[0];
+    newText.unshift(clickedText);
+
+    setTextArr(newText);
   };
 
+
+  // faq 
   const faq = [
     {
       q: "Where can I buy premium bridal lehengas in Kerala?",
@@ -88,6 +132,7 @@ function Landingpage() {
   const toggleFaq = (i) => {
     setFaqIndex(faqindex === i ? null : i);
   };
+
 
   return (
     <>
@@ -253,10 +298,11 @@ function Landingpage() {
       {/* collection page */}
       <section id='collections'>
         <div className="row g-0">
-          <div className="col-md-4 text-light px-5 py-5 d-flex flex-column justify-content-center align-items-start" style={{ backgroundColor: "#0A3F36" }}>
-            <p id='chead1' className='text-white'>OUR COLLECTIONS</p>
-            <p id='chead2'>Bridal Lehangas</p>
-            <p id='cpara1'>Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes.</p>
+          <div className="col-md-4 text-light px-5 py-5 d-flex flex-column justify-content-center align-items-start"
+            style={{ backgroundColor: "#0A3F36" }}>
+            <h1 id="chead1" className="text-white">{textArr[0].h1}</h1>
+            <h2 id="chead2">{textArr[0].h2}</h2>
+            <p id="cpara1">{textArr[0].p}</p>
           </div>
 
           <div className="gallery-wrapper col-md-8 d-flex overflow-hidden" style={{ height: "650px" }}>
@@ -502,11 +548,11 @@ function Landingpage() {
           <Col md={8} sm={12} className=''>
             <ul id='faqlist'>
               {faq.map((item, i) => (
-                <li key={i}>
+                <li onClick={() => toggleFaq(i)} key={i}>
 
                   <div className='d-flex justify-content-between faq-question'>
                     <p>{item.q}</p>
-                    <span className='px-3' onClick={() => toggleFaq(i)}>{faqindex === i ? "-" : "+"}</span>
+                    <span className='px-3'>{faqindex === i ? "-" : "+"}</span>
                   </div>
 
                   <div className={`faq-answer ${faqindex === i ? "open" : "close"}`}>
