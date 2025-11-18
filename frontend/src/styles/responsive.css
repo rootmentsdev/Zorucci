@@ -47,12 +47,12 @@
     height: 100px;
   }
 
-  #Contacthead2{
-   font-size: 28px;
+  #Chead2{
+   font-size: 28px !important;
    }
 
-  #Contacthead1{
-  font-size: 16px;
+  #Chead1{
+  font-size: 16px !important;
    }
 }
 

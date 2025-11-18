@@ -60,7 +60,7 @@ function Footer() {
           <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end pb-3'>
             <h6 className='ms-0'>CONTACT</h6>
             <ul id='list' className='p-0 m-0'>
-              <li className='my-2'>+91 9874561230</li>
+              <li className='my-2'><a style={{textDecoration:"none",color:"black"}} href="tel:+917593844448">+91 7593844448</a></li>
               <li className='my-2'>zorucci@gmail.com</li>
               <li className='my-2'><a href="https://www.instagram.com/zorucci?igsh=MXh3dzJnczQ1MDRkMA=="><FaSquareInstagram className='fs-2' /></a></li>
               <li className='my-2'><FaLinkedin className='fs-2'/></li>

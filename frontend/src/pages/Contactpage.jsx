@@ -66,10 +66,10 @@ function Contactpage() {
           <Col md={6} sm={12}>
             <Card className="text-white text-md-start text-center p-4" style={{ backgroundColor: "#0A3F36E0" }}>
               <Card.Text>
-                <span id='Contacthead1'>CONTACT US</span>
+                <span id='Chead1'>CONTACT US</span>
               </Card.Text>
               <Card.Text>
-                <span id='Contacthead2'>
+                <span id='Chead2'>
                   We’d love to <br />
                   hear from you
                 </span>

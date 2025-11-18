@@ -116,7 +116,7 @@ function Locationpage() {
 
             <button id='locbtn1' className='btn py-md-3 text-white d-md-none d-block mx-auto'
               style={{ width: "80%", backgroundColor: "#0A3F36" }}>
-              <IoLogoWhatsapp className='me-4' /> <a style={{textDecoration:"none",color:"black"}} href="https://wa.me/+917593844448">Whatsapp</a> <MdArrowOutward className='ms-3' />
+              <IoLogoWhatsapp className='me-4' /> <a style={{textDecoration:"none",color:"white"}} href="https://wa.me/+917593844448">Whatsapp</a> <MdArrowOutward className='ms-3' />
             </button>
           </Col>
 
