@@ -48,22 +48,36 @@ function Collectionpage() {
 
   const [imagesArr, setImagesArr] = useState(images);
   const [textArr, setTextArr] = useState(text);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [prevImage, setPrevImage] = useState(null);
 
 
   const handleSliceClick = (clickedIndex) => {
-    if (clickedIndex === 0) return;
+    if (clickedIndex === 0 || isTransitioning) return;
 
-    const newArr = [...imagesArr];
-    const clickedImage = newArr.splice(clickedIndex, 1)[0];
-    newArr.unshift(clickedImage);
+    setIsTransitioning(true);
+    setPrevImage(imagesArr[0]); // Store current image
 
-    setImagesArr(newArr);
+    // Start swipe transition
+    setTimeout(() => {
+      const newArr = [...imagesArr];
+      const clickedImage = newArr.splice(clickedIndex, 1)[0];
+      newArr.unshift(clickedImage);
 
-    const newText = [...textArr];
-    const clickedText = newText.splice(clickedIndex, 1)[0];
-    newText.unshift(clickedText);
+      setImagesArr(newArr);
 
-    setTextArr(newText);
+      const newText = [...textArr];
+      const clickedText = newText.splice(clickedIndex, 1)[0];
+      newText.unshift(clickedText);
+
+      setTextArr(newText);
+
+      // Complete transition after animation
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setPrevImage(null);
+      }, 600);
+    }, 50);
   };
 
 
@@ -73,16 +87,31 @@ function Collectionpage() {
         <div className="row g-0">
           <div className="col-md-4 text-light px-5 py-5 d-flex flex-column justify-content-center align-items-start"
             style={{ backgroundColor: "#0A3F36" }}>
-            <h1 id="chead1" className="text-white">{textArr[0].h1}</h1>
-            <h2 id="chead2">{textArr[0].h2}</h2>
-            <p id="cpara1">{textArr[0].p}</p>
+            <h1 id="chead1" className={`text-white text-content ${isTransitioning ? 'slide-out' : 'slide-in'}`} style={{ transitionDelay: isTransitioning ? '0ms' : '200ms' }}>{textArr[0].h1}</h1>
+            <h2 id="chead2" className={`text-content ${isTransitioning ? 'slide-out' : 'slide-in'}`} style={{ transitionDelay: isTransitioning ? '50ms' : '250ms' }}>{textArr[0].h2}</h2>
+            <p id="cpara1" className={`text-content ${isTransitioning ? 'slide-out' : 'slide-in'}`} style={{ transitionDelay: isTransitioning ? '100ms' : '300ms' }}>{textArr[0].p}</p>
           </div>
 
           <div className="gallery-wrapper col-md-8 d-flex overflow-hidden" style={{ height: "650px" }}>
 
-            {/* Main Image (Always first item) */}
+            {/* Main Image Container */}
             <div className="main-image">
-              <img src={imagesArr[0]} alt="" />
+              {/* Previous image sliding out */}
+              {isTransitioning && prevImage && (
+                <img 
+                  src={prevImage} 
+                  alt="" 
+                  className="image-swipe-out"
+                  key="prev"
+                />
+              )}
+              {/* Current/New image sliding in */}
+              <img 
+                src={imagesArr[0]} 
+                alt="" 
+                className={isTransitioning ? 'image-swipe-in' : 'image-static'}
+                key={imagesArr[0]}
+              />
             </div>
 
             {/* Slices */}

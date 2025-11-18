@@ -31,16 +31,59 @@
 }
 
 .main-image {
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: #000; /* Prevent white flash */
 }
 
 .main-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.4s ease;
+  will-change: transform;
+}
+
+/* Static state - no transition */
+.main-image img.image-static {
+  position: absolute;
+  transform: translateX(0);
+  transition: none;
+}
+
+/* Image sliding out (previous) */
+.main-image img.image-swipe-out {
+  z-index: 1;
+  animation: swipeOut 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Image sliding in (new) */
+.main-image img.image-swipe-in {
+  z-index: 2;
+  transform: translateX(100%);
+  animation: swipeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes swipeOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes swipeIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .slice-group {
@@ -54,7 +97,7 @@
   height: 100%;
   overflow: hidden;
   cursor: pointer;
-  transition: 0.4s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slice img {
@@ -62,10 +105,61 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
-  transition: 0.4s ease;
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slice:hover {
+  transform: translateX(-5px);
 }
 
 .slice:hover img {
   filter: brightness(1);
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
+
+/* Text content transitions */
+.text-content {
+  will-change: opacity, transform;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-content.slide-out {
+  opacity: 0;
+  transform: translateY(-15px) translateX(-10px);
+}
+
+.text-content.slide-in {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  animation: textSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+}
+
+@keyframes textSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Smooth section entry */
+#collections {
+  animation: sectionFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes sectionFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
