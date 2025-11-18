@@ -1,0 +1,19 @@
+#ahead1{
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 75px;
+    text-shadow: 2px;
+    color: hsla(122, 44%, 13%, 1.00);
+}
+
+#apara1{
+  font-family: "DM Sans", sans-serif;
+  text-align:justify;
+  font-Size: 16px;
+  color: #171717;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 6px;
+    
+    
+}

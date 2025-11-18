@@ -1,0 +1,23 @@
+#jhead1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5A2A0B;
+}
+#jhead2{
+    font-family: "Noto Serif", serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500;     
+   
+}
+
+#jpara1{
+  font-family: "DM Sans", sans-serif;
+  text-align:justify;
+  font-Size: 16px;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 6px;
+    
+}

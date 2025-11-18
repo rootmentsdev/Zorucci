@@ -1,7 +1,6 @@
 .main-header {
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px);
   z-index: 999;
   padding: 12px 30px;
   transition: transform 0.35s ease;

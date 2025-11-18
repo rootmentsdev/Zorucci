@@ -1,0 +1,37 @@
+#fhead1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5A2A0B;
+}
+#fhead2{
+    font-family: "Noto Serif", serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500;     
+   
+}
+
+#faqlist {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+
+.faq-answer.open {
+  max-height: 200px; /* enough height */
+  opacity: 1;
+  padding-bottom: 10px;
+}
