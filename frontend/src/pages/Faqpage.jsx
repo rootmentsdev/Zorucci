@@ -63,7 +63,7 @@ function Faqpage() {
                   </div>
 
                   <div className={`faq-answer ${faqindex === i ? "open" : "close"}`}>
-                    <p>{item.a}</p>
+                    <p id='fpara1'>{item.a}</p>
                   </div>
 
                   <hr />

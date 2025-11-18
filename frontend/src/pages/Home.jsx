@@ -13,9 +13,9 @@ function Home() {
     <>
       <Landingpage />
       <Aboutpage />
-      <Designpage />
       <Collectionpage />
       <Jewelrypage />
+      <Designpage />
       <Locationpage />
       <Contactpage />
       <Fapage />
