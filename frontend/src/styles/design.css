@@ -12,11 +12,35 @@
     color: #0A3F36;
 }
 
-#dpara1{
+.dpara{
   font-family: "DM Sans", sans-serif;
   text-align:justify;
   font-Size: 16px;
   opacity: 0.6;
   line-height: 1.6;
   margin-top: 6px;
+}
+
+@media (max-width: 575.98px) {
+  .dpara {
+    font-size: 14px;
+ 
+  }
+}
+
+
+.dpara1{
+  font-family: "DM Sans", sans-serif;
+  text-align:justify;
+  font-Size: 16px;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+@media (max-width: 575.98px) {
+  .dpara1 {
+    font-size: 14px;
+    text-align: center;
+  }
 }
