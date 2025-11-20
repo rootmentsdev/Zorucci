@@ -19,6 +19,7 @@ function Home() {
       <Locationpage />
       <Contactpage />
       <Fapage />
+      
     </>
   )
 }

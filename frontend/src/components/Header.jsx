@@ -48,12 +48,12 @@ function Header() {
                             <Nav.Link href="#jewelry" className="text-white">Jewelry</Nav.Link>
 
                         
-                            <Nav.Link href="#herosection" className="d-none d-lg-block">
+                            <Nav.Link href="/" className="d-none d-lg-block">
                                 <Image src={logo} alt="" fluid style={{ width: "150px" }} />
                             </Nav.Link>
 
                             <Nav.Link href="#location" className="text-white">Location</Nav.Link>
-                            <Nav.Link href="#blog" className="text-white">Blog</Nav.Link>
+                            <Nav.Link href="/blog-page" className="text-white">Blog</Nav.Link>
                             <Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
