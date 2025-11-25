@@ -21,8 +21,8 @@ function Designpage() {
   return (
     <>
       <Container>
-        <Row className='px-md-0 mt-4'>
-          <Col md={5} sm={12} className='align-items-center text-center pt-3'>
+        <Row className='px-md-0 mt-4 px-4'>
+          <Col md={5} sm={12} className='align-items-center text-center pt-3 ms-2'>
             <Image id='designimg1' src={designimg1} alt='' fluid className='d-md-block d-none' style={{ width: "467px", height: "572px" }} />
             <Image id='designimg1' src={designimg1} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "287px", height: "350px" }} />
 
@@ -53,7 +53,7 @@ function Designpage() {
                   </Col>
                 </Row>
 
-                <Row className='g-3 text-md-start text-center ms-auto mt-md-3 d-flex justify-content-around'>
+                <Row className='g-3 text-md-start text-center ms-auto mt-md-3 mt-2 d-flex justify-content-around'>
                   {/* Drape Setting & Final Trial Finishing */}
                   <Col md={5} sm={12} className='p-md-3 p-2' style={{ border: "1px solid #D8D8D8", borderRadius: "23px" }}>
                     <p id='dhead1'>Drape Setting & Final Trial Finishing</p>
