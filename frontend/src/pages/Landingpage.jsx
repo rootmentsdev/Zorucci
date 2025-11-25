@@ -109,9 +109,9 @@ function Landingpage() {
                     color: "#5A2A0B",
                   }}
                 >
-                 <a style={{textDecoration:"none",color:"black"}} href="tel:+917593844448"> Book Appointment{" "}</a>
+                 <a className='ms-auto' style={{textDecoration:"none",color:"black"}} href="tel:+917593844448">Book Appointment</a>
                   <span>
-                    <MdArrowOutward className='ms-3 mb-1' />
+                    <MdArrowOutward className='ms-4 mb-1' />
                   </span>
                 </button>
               </div>
