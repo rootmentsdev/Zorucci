@@ -39,6 +39,7 @@ function Aboutpage() {
               <h1 id='ahead1' className='my-4'>
                 Luxury Without the <br /> Lifetime Price Tag
               </h1>
+              <p className='mb-3' style={{fontStyle: 'italic', fontSize: '18px', color: '#0A3F36'}}>"Luxury Without the Lifetime Price Tag"</p>
 
               <p id='apara1' className='py-3'>
                 Zorucci is a luxury bridal wear brand based in Kerala, dedicated to curating exquisite bridal fashion. Since 2018, we’ve served thousands of brides with personalized styling, couture craftsmanship, and timeless bridal elegance. From traditional to modern, Zorucci combines heritage-rich details with contemporary design.

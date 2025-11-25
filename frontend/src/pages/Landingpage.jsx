@@ -90,7 +90,7 @@ function Landingpage() {
                     color: "#5A2A0B",
                   }}
                 >
-                  <a style={{textDecoration:"none",color:"black"}} href="tel:+917593844448"> Book Appointment{" "}</a>
+                  <a style={{textDecoration:"none",color:"black"}} href="tel:+916235031144"> Book a Private Appointment{" "}</a>
                  
                   <span>
                     <MdArrowOutward className='ms-5 mb-1' />
@@ -109,7 +109,7 @@ function Landingpage() {
                     color: "#5A2A0B",
                   }}
                 >
-                 <a className='ms-auto' style={{textDecoration:"none",color:"black"}} href="tel:+917593844448">Book Appointment</a>
+                 <a className='ms-auto' style={{textDecoration:"none",color:"black"}} href="tel:+916235031144">Book a Private Appointment</a>
                   <span>
                     <MdArrowOutward className='ms-4 mb-1' />
                   </span>

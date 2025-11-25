@@ -12,12 +12,12 @@ function Faqpage() {
 
   const faq = [
     {
-      q: "Where can I rent premium bridal lehengas in Kerala?",
-      a: "Visit any of Zorucci’s four showrooms for a curated collection of luxury bridal lehengas."
+      q: "Where can I buy premium bridal lehengas in Kerala?",
+      a: "Visit any of Zorucci's four showrooms for a curated collection of luxury bridal lehengas."
     },
     {
       q: "Does Zorucci offer custom bridal outfits?",
-      a: "No, we do not create custom bridal outfits from scratch We offer fittings and standard alterations on the outfits available in our collection. This includes adjustments for size, length, comfort, and finishing — but not custom designing, fabric selection, or new outfit creation."
+      a: "Yes! We offer full customization including design modifications, fabric selection, and fittings."
     },
     {
       q: "Do you offer wedding gowns for Christian ceremonies?",
@@ -29,7 +29,7 @@ function Faqpage() {
     },
     {
       q: "Can I book an appointment online or by phone?",
-      a: "Yes. Call or WhatsApp +91 7593844448 to book your appointment."
+      a: "Yes. Call or WhatsApp +91 6235031144 to book your appointment."
     }
   ];
 

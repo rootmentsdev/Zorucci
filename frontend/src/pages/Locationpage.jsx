@@ -21,7 +21,7 @@ function Locationpage() {
           <Col md={3} sm={12}>
             <Card className='locationcard' style={{ width: '100%', backgroundColor: "#0A3F36",height:"100%" }}>
               <Card.Body>
-                <Card.Title className='text-center my-3' id='lhead'>Zorucci Kochi</Card.Title>
+                <Card.Title className='text-center my-3' id='lhead'>Zorucci Kochi – Premium Bridal Lehengas & Gowns</Card.Title>
                 <div className='d-flex py-2'>
                   <span id='lpara1'><HiOutlineLocationMarker /></span>
                   <Card.Text id='lpara1' className='ms-2'>
@@ -39,7 +39,7 @@ function Locationpage() {
           <Col md={3} sm={12}>
             <Card className='locationcard' style={{ width: '100%', backgroundColor: "#0A3F36" ,height:"100%" }}>
               <Card.Body>
-                <Card.Title className='text-center my-3' id='lhead'>Zorucci Edappal</Card.Title>
+                <Card.Title className='text-center my-3' id='lhead'>Zorucci Edappal – Designer Bridal Boutique</Card.Title>
                 <div className='d-flex py-2'>
                   <span id='lpara1'><HiOutlineLocationMarker /></span>
                   <Card.Text id='lpara1' className='ms-2'>
@@ -57,7 +57,7 @@ function Locationpage() {
           <Col md={3} sm={12}>
             <Card className='locationcard' style={{ width: '100%', backgroundColor: "#0A3F36",height:"100%" }}>
               <Card.Body>
-                <Card.Title className='text-center my-3' id='lhead'>Zorucci Kottakkal</Card.Title>
+                <Card.Title className='text-center my-3' id='lhead'>Zorucci Kottakkal – Bridal Studio for Tailored Gowns</Card.Title>
                 <div className='d-flex py-2'>
                   <span id='lpara1'><HiOutlineLocationMarker /></span>
                   <Card.Text id='lpara1' className='ms-2'>
@@ -75,7 +75,7 @@ function Locationpage() {
           <Col md={3} sm={12}>
             <Card className='locationcard' style={{ width: '100%', backgroundColor: "#0A3F36",height:"100%" }}>
               <Card.Body>
-                <Card.Title className='text-center my-3' id='lhead'>Zorucci Perinthalmanna</Card.Title>
+                <Card.Title className='text-center my-3' id='lhead'>Zorucci Perinthalmanna – Bridal Sarees & Custom Wear</Card.Title>
                 <div className='d-flex py-2'>
                   <span id='lpara1'><HiOutlineLocationMarker /></span>
                   <Card.Text id='lpara1' className='ms-2'>
@@ -99,24 +99,24 @@ function Locationpage() {
           <Col md={3} sm={12}>
             <button id='locbtn1' className='btn py-md-3 d-flex d-md-block d-none'
               style={{ width: "100%", borderBottom: "solid", borderRadius: 0, color: "#5A2A0B" }}>
-              <IoLogoWhatsapp className='me-3' /><a style={{ textDecoration: "none", color: "black" }} href="https://wa.me/+917593844448">Whatsapp</a><MdArrowOutward className='ms-3' />
+              <IoLogoWhatsapp className='me-3' /><a style={{ textDecoration: "none", color: "black" }} href="https://wa.me/+916235031144">Whatsapp</a><MdArrowOutward className='ms-3' />
             </button>
 
             <button id='locbtn1' className='btn py-md-3 text-white d-md-none d-block mx-auto'
               style={{ width: "80%", backgroundColor: "#0A3F36" }}>
-              <IoLogoWhatsapp className='me-4' /> <a style={{ textDecoration: "none", color: "white" }} href="https://wa.me/+917593844448">Whatsapp</a> <MdArrowOutward className='ms-3' />
+              <IoLogoWhatsapp className='me-4' /> <a style={{ textDecoration: "none", color: "white" }} href="https://wa.me/+916235031144">Whatsapp</a> <MdArrowOutward className='ms-3' />
             </button>
           </Col>
 
           <Col md={3} sm={12}>
             <button id='locbtn2' className='btn py-md-3 d-flex d-md-block d-none'
               style={{ width: "100%", borderBottom: "solid", borderRadius: 0, color: "#5A2A0B" }}>
-              <FaPhoneAlt className='me-2' /> <a style={{ textDecoration: "none", color: "black" }} href="tel:+917593844448">+91 7593844448</a><MdArrowOutward className='ms-3' />
+              <FaPhoneAlt className='me-2' /> <a style={{ textDecoration: "none", color: "black" }} href="tel:+916235031144">+91 6235031144</a><MdArrowOutward className='ms-3' />
             </button>
 
             <button id='locbtn2' className='btn py-md-3 d-md-none d-block mx-auto mt-3'
               style={{ width: "80%", backgroundColor: "rgba(0, 0, 0, 0.12)", color: "#5A2A0B" }}>
-              <FaPhoneAlt className='me-3' /> <a style={{ textDecoration: "none", color: "black" }} href="tel:+917593844448">+91 7593844448</a><MdArrowOutward className='ms-3' />
+              <FaPhoneAlt className='me-3' /> <a style={{ textDecoration: "none", color: "black" }} href="tel:+916235031144">+91 6235031144</a><MdArrowOutward className='ms-3' />
             </button>
           </Col>
         </Row>
