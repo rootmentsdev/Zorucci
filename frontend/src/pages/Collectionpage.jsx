@@ -20,7 +20,7 @@ function Collectionpage() {
   const text = [
     {
       h1: "OUR COLLECTIONS",
-      h2: "Bridal Lehangas",
+      h2: "Bridal Lehengas",
       p: "Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes."
     },
     {
@@ -40,7 +40,7 @@ function Collectionpage() {
     },
     {
       h1: "OUR COLLECTIONS",
-      h2: "Bridal Lehangas",
+      h2: "Bridal Lehengas",
       p: "Our designer bridal lehengas feature intricate embroidery, zardozi, sequins, mirrorwork, and rich silks.Perfect for Indian weddings and receptions, each piece blends traditional motifs with modern silhouettes."
     }
   ];

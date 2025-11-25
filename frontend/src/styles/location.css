@@ -31,4 +31,37 @@
 .locationcard:hover {
   transform: translateY(-15px);
   box-shadow: 0 15px 25px rgba(0, 19, 28, 0.881);
+}/* location page */
+#lhead {
+  font-family: "Noto Serif", serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: white;
+}
+
+#lpara {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#lpara1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 16px;
+  color: white;
+}
+
+.locationcard {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.locationcard:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 25px rgba(0, 19, 28, 0.881);
 }

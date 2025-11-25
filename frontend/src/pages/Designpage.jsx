@@ -20,42 +20,54 @@ import designimg4 from '../images/designimg4.png';
 function Designpage() {
   return (
     <>
-          <Container>
-        <Row className='px-md-0 px-3'>
-          <Col md={6} sm={12} className='align-items-center text-center py-5'>
-            <Image id='designimg1' src={designimg1} alt='' fluid className='d-md-block d-none' style={{ width: "467px", height: "571px" }} />
+      <Container>
+        <Row className='px-md-0 mt-4'>
+          <Col md={5} sm={12} className='align-items-center text-center pt-3'>
+            <Image id='designimg1' src={designimg1} alt='' fluid className='d-md-block d-none' style={{ width: "467px", height: "572px" }} />
             <Image id='designimg1' src={designimg1} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "287px", height: "350px" }} />
 
           </Col>
-          <Col md={6} sm={12} >
-            <div className='align-items-center text-center py-5 mt-md-5'>
+          <Col md={7} sm={12} className='mt-4' >
+            <div className='align-items-center text-center'>
               <div className='text-md-start'>
-                <p id='dhead1'>CUSTOM DESIGN SERVICES</p>
-                <h2 id='dhead2'>Bespoke <br /> Bridal Fashion</h2>
+                <p id='dhead1'>FIT AND TYLING SERVICES</p>
+                <h2 id='dhead2'>Perfect Bridal Fit</h2>
 
               </div>
-              <div className='text-start py-3'>
-                <p className='dpara'>Zorucci specializes in custom bridal wear design. Whether you envision a modified neckline, added embellishments, or a unique fabric, our designers bring your dream dress to life.</p>
-                <p className='dpara'>From initial sketches to final fittings, your outfit is crafted exclusively for you.</p>
+              <div className='text-start pt-4'>
+                <p className='dpara'>Zorucci ensures every bride looks and feels her best with expert fittings and alteration support.We help refine the outfit you select from our collection so the final look feels naturally yours.</p>
+                <p className='dpara'>From first trial to final fitting, our team guides you through a smooth, comfortable experience.</p>
               </div>
-              <div>
-                <Row className='text-md-start text-center ms-auto mt-md-3'>
-                  <Col className=''>
-                    <Image id='designimg2' src={designimg2} alt='' fluid className='d-md-block d-none' style={{ width: "54px", height: "54px" }} />
-                    <Image id='designimg2' src={designimg2} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "27px", height: "27px" }} />
-                    <p className='dpara1'>Sketch-to-Stitch Customization</p>
+              <div >
+                <Row className='g-3 text-md-start text-center mt-md-3 d-flex justify-content-around '>
+                  {/* Size Adjustments & Tailored Fittings */}
+                  <Col md={5} sm={12} className='p-md-3 p-2' style={{ border: "1px solid #D8D8D8", borderRadius: "23px" }}>
+                    <p id='dhead1'>Size Adjustments & Tailored Fittings</p>
+                    <p id='dpara'>Personalized measurements for your perfect fit</p>
                   </Col>
-                  <Col className='order-md-1 order-2'>
-                    <Image id='designimg3' src={designimg3} alt='' fluid className='d-md-block d-none' style={{ width: "54px", height: "54px" }} />
-                    <Image id='designimg3' src={designimg3} alt='' fluid className='d-block d-md-none ms-4' style={{ width: "27px", height: "27px" }} />
-                    <p className='dpara1'>Personal Fittings <br /> and Alterations</p>
-                  </Col>
-                  <Col className='order-md-2 order-1'>
-                    <Image id='designimg4' src={designimg4} alt='' fluid className='d-md-block d-none ' style={{ width: "54px", height: "54px" }} />
-                    <Image id='designimg4' src={designimg4} alt='' fluid className='d-block d-md-none ms-5' style={{ width: "27px", height: "27px" }} />
-                    <p className='dpara1'>Premium Embellishments and Fabric Choices</p>
+
+                  {/* Standard Alterations */}
+                  <Col md={5} sm={12} className='p-md-3 p-3' style={{ border: "1px solid #D8D8D8", borderRadius: "23px" }}>
+                    <p id='dhead1'>Standard Alterations</p>
+                    <p id='dpara'>Top length, waist, sleeves, and more</p>
                   </Col>
                 </Row>
+
+                <Row className='g-3 text-md-start text-center ms-auto mt-md-3 d-flex justify-content-around'>
+                  {/* Drape Setting & Final Trial Finishing */}
+                  <Col md={5} sm={12} className='p-md-3 p-2' style={{ border: "1px solid #D8D8D8", borderRadius: "23px" }}>
+                    <p id='dhead1'>Drape Setting & Final Trial Finishing</p>
+                    <p id='dpara'>Perfect draping for an elegant silhouette</p>
+                  </Col>
+
+                  {/* Comfort Adjustments */}
+                  <Col md={5} sm={12} className='p-md-3 p-2' style={{ border: "1px solid #D8D8D8", borderRadius: "23px" }}>
+                    <p id='dhead1'>Comfort Adjustments</p>
+                    <p id='dpara'>Better mobility and confidence for your big day</p>
+                  </Col>
+                </Row>
+
+
               </div>
             </div>
           </Col>
