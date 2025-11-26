@@ -66,7 +66,7 @@ function Landingpage() {
                   className='btn py-md-3 text-white d-md-block d-none'
                   style={{ width: "100%", backgroundColor: "#0A3F36" }}
                 >
-                  Explore Collection
+                  <a href="#collections" style={{textDecoration:"none",color:"white"}}>Explore Collection</a>
                 </button>
 
                 {/* Mobile Explore button */}
@@ -75,7 +75,7 @@ function Landingpage() {
                   className='btn my-3 py-md-3 text-white d-md-none d-block order-md-1 order-2'
                   style={{ width: "100%", backgroundColor: "#0A3F36" }}
                 >
-                  Explore Collection
+                  <a href="#collections" style={{textDecoration:"none",color:"white"}}>Explore Collection</a>
                 </button>
 
                 {/* Large screen Book button */}
