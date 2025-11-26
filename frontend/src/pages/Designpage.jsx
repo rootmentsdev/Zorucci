@@ -29,7 +29,7 @@ function Designpage() {
           </Col>
           <Col md={7} sm={12} className='mt-md-0 mt-3 d-flex flex-column justify-content-center design-content-col'>
             <div className='text-md-start text-center'>
-              <p id='dhead1' className='mb-1 mb-md-2'>FIT AND TYLING SERVICES</p>
+              <p id='dhead1' className='mb-1 mb-md-2'>FIT AND TAILORING SERVICES</p>
               <h2 id='dhead2' className='mb-3 mb-md-3'>Perfect Bridal Fit</h2>
             </div>
             <div className='text-md-start text-center pt-md-3 pt-2'>
