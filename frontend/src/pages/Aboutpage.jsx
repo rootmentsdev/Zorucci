@@ -20,7 +20,7 @@ function Aboutpage() {
         <Container fluid>
           <Row className=''>
 
-            <Col md={6} className='pt-md-5 d-flex justify-content-center'>
+            <Col md={6} className='pt-md-2 d-flex justify-content-center'>
               <Row className='justify-content-center d-flex g-0' >
                 <Col xs={6}>
                   <Image src={about1} fluid alt="example" className='h-100' />
@@ -34,7 +34,7 @@ function Aboutpage() {
             </Col>
 
 
-            <Col md={6} className='text-md-start text-center pt-5'>
+            <Col md={6} className='text-md-start text-center p-5'>
               <h5 id='ahead'>WHO WE ARE</h5>
               <h1 id='ahead1' className='my-4'>
                 Luxury Without the <br /> Lifetime Price Tag
