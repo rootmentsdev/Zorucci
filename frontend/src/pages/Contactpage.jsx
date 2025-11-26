@@ -64,7 +64,7 @@ function Contactpage() {
         <Row className='py-5 mx-5'>
           <Col md={6} sm={12}></Col>
           <Col md={6} sm={12}>
-            <Card className="text-white text-md-start text-center p-4" style={{ backgroundColor: "#0A3F36E0" }}>
+            <Card className="text-white text-start p-4" style={{ backgroundColor: "#0A3F36E0" }}>
               <Card.Text>
                 <span id='Chead1'>CONTACT US</span>
               </Card.Text>

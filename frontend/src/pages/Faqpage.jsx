@@ -46,7 +46,7 @@ function Faqpage() {
       <Container id='faq'>
         <Row className='mt-5 g-0 px-3'>
           <Col md={4} sm={12} >
-            <div className='text-md-start text-center'>
+            <div className='text-start'>
               <p id='fhead1'>FAQ</p>
               <p id='fhead2'>For a seamless <br /> bridal experience</p>
             </div>

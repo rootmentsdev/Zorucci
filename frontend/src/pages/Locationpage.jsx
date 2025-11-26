@@ -11,8 +11,8 @@ import '../styles/responsive.css'
 function Locationpage() {
   return (
     <>
-      <Container id='location' className='d-md-flex flex-column justify-content-center my-5'>
-        <div className='text-md-start text-center'>
+      <Container id='location' className='d-md-flex flex-column justify-content-center my-5 p-4'>
+        <div className='text-start'>
           <p id='chead1'>OUR LOCATIONS</p>
           <p id='chead2'>Visit Us,<br />Experience Luxury</p>
         </div>
