@@ -59,12 +59,12 @@ function Landingpage() {
                 bridal dream begins.
               </p>
 
-              <div className='d-flex flex-column align-items-center flex-md-row gap-2 gap-md-5 my-3'>
+              <div className='d-flex flex-column align-items-center flex-md-row gap-2 gap-md-5 my-3 px-3 px-md-0'>
                 {/* Large screen Explore button */}
                 <button
                   id='homebtn'
                   className='btn py-md-3 text-white d-md-block d-none'
-                  style={{ width: "45%", backgroundColor: "#0A3F36" }}
+                  style={{ width: "100%", backgroundColor: "#0A3F36" }}
                 >
                   Explore Collection
                 </button>
@@ -73,7 +73,7 @@ function Landingpage() {
                 <button
                   id='homebtn'
                   className='btn my-3 py-md-3 text-white d-md-none d-block order-md-1 order-2'
-                  style={{ width: "60%", backgroundColor: "#0A3F36" }}
+                  style={{ width: "100%", backgroundColor: "#0A3F36" }}
                 >
                   Explore Collection
                 </button>
@@ -83,7 +83,7 @@ function Landingpage() {
                   id='homebtn'
                   className='btn py-md-3 d-flex d-md-block d-none'
                   style={{
-                    width: "45%",
+                    width: "100%",
                     border: "none",
                     borderBottom: "solid",
                     borderRadius: "0px",
@@ -100,16 +100,16 @@ function Landingpage() {
                 {/* Mobile Book button */}
                 <button
                   id='homebtn'
-                  className='btn py-md-3 d-flex d-md-none d-block order-md-2 order-1'
+                  className='btn py-md-3 d-flex d-md-none d-block order-md-2 order-1 align-items-center justify-content-center'
                   style={{
-                    width: "60%",
+                    width: "100%",
                     border: "none",
-                    borderBottom: "solid",
+                    borderBottom: "0px",
                     borderRadius: "0px",
                     color: "#5A2A0B",
                   }}
                 >
-                 <a className='ms-auto' style={{textDecoration:"none",color:"black"}} href="tel:+916235031144">Book a Private Appointment</a>
+                 <a className='' style={{textDecoration:"none",color:"black"}} href="tel:+916235031144">Book a Private Appointment</a>
                   <span>
                     <MdArrowOutward className='ms-4 mb-1' />
                   </span>
