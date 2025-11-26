@@ -22,32 +22,39 @@ function Contactpage() {
   };
 
   const handleSubmit = (e) => {
-  e.preventDefault();
-  setLoading(true);
+    e.preventDefault();
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyofNYmzt6BAHwv5D86_VsS8hFytRsr_QtiHPBicOdaS8HAbVjdpo4ijqAbNXyMedmvxA/exec";
+    const digitsOnly = formData.phone.replace(/\D/g, "");
+    if (digitsOnly.length !== 10) {
+      alert("Enter correct number");
+      return;
+    }
 
-  // Create form data
-  const formParams = new URLSearchParams();
-  formParams.append("fullName", formData.fullName);
-  formParams.append("phone", formData.phone);
-  formParams.append("email", formData.email);
-  formParams.append("message", formData.message);
+    setLoading(true);
 
-  // Fire-and-forget POST request
-  fetch(scriptURL, {
-    method: 'POST',
-    body: formParams,
-    mode: 'no-cors' // Important: prevents CORS error
-  });
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyofNYmzt6BAHwv5D86_VsS8hFytRsr_QtiHPBicOdaS8HAbVjdpo4ijqAbNXyMedmvxA/exec";
 
-  // Immediately reset form and reload page
-  alert("Form submitted successfully!");
-  setFormData({ fullName: "", phone: "", email: "", message: "" });
-  setLoading(false);
+    // Create form data
+    const formParams = new URLSearchParams();
+    formParams.append("fullName", formData.fullName);
+    formParams.append("phone", formData.phone);
+    formParams.append("email", formData.email);
+    formParams.append("message", formData.message);
 
-  window.location.reload();
-};
+    // Fire-and-forget POST request
+    fetch(scriptURL, {
+      method: 'POST',
+      body: formParams,
+      mode: 'no-cors' // Important: prevents CORS error
+    });
+
+    // Immediately reset form and reload page
+    alert("Form submitted successfully!");
+    setFormData({ fullName: "", phone: "", email: "", message: "" });
+    setLoading(false);
+
+    window.location.reload();
+  };
 
 
   return (
