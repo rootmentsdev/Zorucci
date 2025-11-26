@@ -34,7 +34,7 @@ function Aboutpage() {
             </Col>
 
 
-            <Col md={6} className='text-md-start text-center p-5'>
+            <Col md={6} className='text-md-start text-center p-4'>
               <h5 id='ahead'>WHO WE ARE</h5>
               <h1 id='ahead1' className='my-4'>
                 Luxury Without the <br /> Lifetime Price Tag
