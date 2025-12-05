@@ -1,7 +1,11 @@
+#ahead{
+  font-size: 16px;
+}
+
 #ahead1{
     font-family: "Noto Serif", serif;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 42px;
     text-shadow: 2px;
     color: hsla(122, 44%, 13%, 1.00);
 }
@@ -18,47 +22,4 @@
     
 }
 
-/* Ensure image row is always centered */
-#about .row > .col-md-6:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .row > .col-md-6:first-child .row {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: stretch;
-}
-
-/* Ensure left and right image columns have equal height */
-#about .row > .col-md-6:first-child .row {
-  align-items: stretch;
-}
-
-#about .row > .col-md-6:first-child .row > .col-xs-6 {
-  display: flex;
-}
-
-/* Left image column - fill full height to match right column */
-#about .row > .col-md-6:first-child .row > .col-xs-6:first-child {
-  align-items: stretch;
-}
-
-#about .row > .col-md-6:first-child .row > .col-xs-6:first-child img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* Reduce space between left and right image columns */
-#about .row > .col-md-6:first-child .row > .col-xs-6:first-child {
-  padding-right: 0.25rem;
-}
-
-#about .row > .col-md-6:first-child .row > .col-xs-6:last-child {
-  padding-left: 0.25rem;
-}
 

@@ -98,6 +98,11 @@
     object-fit: cover;
   }
 
+  .aboutimg1{
+    width: 197px;
+    height: 296px;
+  }
+
   #head1 {
     font-size: 55px;
     text-align: center;
