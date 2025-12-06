@@ -33,14 +33,13 @@ function Footer() {
           </Col>
 
           {/* Column 2 */}
-          <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end'>
+          <Col md={3} sm={12} className='d-md-flex flex-column justify-content-end mb-md-5 pb-md-2'>
             <h6 className='ms-0'>QUICK LINKS</h6>
             <ul id='list' className='p-0 m-0'>
               <li className='my-2'><a href="#herosection">Home</a></li>
               <li className='my-2'><a href="#about">About</a></li>
               <li className='my-2'><a href="#collections">Collections</a></li>
-              <li className='my-2'>How it works?</li>
-              <li className='my-2'>Why rent?</li>
+              
             </ul>
           </Col>
 
@@ -49,7 +48,7 @@ function Footer() {
             <h6 className='ms-0'>INFORMATIONS</h6>
             <ul id='list' className='p-0 m-0'>
               <li className='my-2'><a href="#location">Location</a></li>
-              <li className='my-2'><a href="#faq"></a>FAQs</li>
+              <li className='my-2'><a href="#faqpage">FAQs</a></li>
               <li className='my-2'>Privacy Policy</li>
               <li className='my-2'>Terms & Conditions</li>
               <li className='my-2'><a href="#contact">Contact</a></li>
