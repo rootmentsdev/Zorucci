@@ -43,8 +43,8 @@ function Faqpage() {
 
   return (
     <>
-      <Container id='faq'>
-        <Row className='mt-5 g-0 px-3'>
+      <Container >
+        <Row  className='mt-5 g-0 px-3'>
           <Col md={4} sm={12} >
             <div className='text-start'>
               <p id='fhead1'>FAQ</p>
