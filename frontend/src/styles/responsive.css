@@ -37,7 +37,8 @@
   }
 
   #homeimg2{
-    transform:none;
+    transform:none !important;   
+    padding-bottom: 20px;
   }
 
   #homebtn{

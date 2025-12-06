@@ -18,7 +18,7 @@ function Jewelrypage() {
           <div className="col-md-8 order-md-1 order-2">
             <Image id='collectimg2' src={jewelryimg2} alt="" fluid style={{ width: "100%", height: "649px", objectFit: "cover" }} />
           </div>
-          <div className="col-md-4 px-5 py-5 text-light d-flex flex-column justify-content-center align-items-start order-md-2 order-1 " style={{ backgroundColor: "#0A3F36" }}>
+          <div className="col-md-4  text-light d-flex flex-column justify-content-center align-items-start order-md-2 order-1 " style={{ backgroundColor: "#0A3F36",padding:"30px"  }}>
             <p id='jhead1' className='text-white'>JEWELS BY ZORUCCI</p>
             <p id='jhead2'>Complete Your Bridal Look</p>
             <p id='jpara1'>Explore our jewelry rentals and find the perfect match for your outfit.</p>

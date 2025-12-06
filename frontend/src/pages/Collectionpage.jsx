@@ -85,8 +85,8 @@ function Collectionpage() {
     <>
       <section id='collections'>
         <div className="row g-0">
-          <div className="col-md-4 text-light px-5 py-5 d-flex flex-column justify-content-center align-items-start"
-            style={{ backgroundColor: "#0A3F36" }}>
+          <div className="col-md-4 text-light d-flex flex-column justify-content-center align-items-start"
+            style={{ backgroundColor: "#0A3F36" ,padding:"30px" }}>
             <h1 id="chead1" className={`text-white text-content ${isTransitioning ? 'slide-out' : 'slide-in'}`} style={{ transitionDelay: isTransitioning ? '0ms' : '200ms' }}>{textArr[0].h1}</h1>
             <h2 id="chead2" className={`text-content ${isTransitioning ? 'slide-out' : 'slide-in'}`} style={{ transitionDelay: isTransitioning ? '50ms' : '250ms' }}>{textArr[0].h2}</h2>
             <p id="cpara1" className={`text-content ${isTransitioning ? 'slide-out' : 'slide-in'}`} style={{ transitionDelay: isTransitioning ? '100ms' : '300ms' }}>{textArr[0].p}</p>
