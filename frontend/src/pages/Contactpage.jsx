@@ -22,7 +22,7 @@ function Contactpage() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
     const digitsOnly = formData.phone.replace(/\D/g, "");
     if (digitsOnly.length !== 10) {
@@ -30,31 +30,31 @@ function Contactpage() {
       return;
     }
 
-    setLoading(true);
+  setLoading(true);
 
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyofNYmzt6BAHwv5D86_VsS8hFytRsr_QtiHPBicOdaS8HAbVjdpo4ijqAbNXyMedmvxA/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyofNYmzt6BAHwv5D86_VsS8hFytRsr_QtiHPBicOdaS8HAbVjdpo4ijqAbNXyMedmvxA/exec";
 
-    // Create form data
-    const formParams = new URLSearchParams();
-    formParams.append("fullName", formData.fullName);
-    formParams.append("phone", formData.phone);
-    formParams.append("email", formData.email);
-    formParams.append("message", formData.message);
+  // Create form data
+  const formParams = new URLSearchParams();
+  formParams.append("fullName", formData.fullName);
+  formParams.append("phone", formData.phone);
+  formParams.append("email", formData.email);
+  formParams.append("message", formData.message);
 
-    // Fire-and-forget POST request
-    fetch(scriptURL, {
-      method: 'POST',
-      body: formParams,
-      mode: 'no-cors' // Important: prevents CORS error
-    });
+  // Fire-and-forget POST request
+  fetch(scriptURL, {
+    method: 'POST',
+    body: formParams,
+    mode: 'no-cors' // Important: prevents CORS error
+  });
 
-    // Immediately reset form and reload page
-    alert("Form submitted successfully!");
-    setFormData({ fullName: "", phone: "", email: "", message: "" });
-    setLoading(false);
+  // Immediately reset form and reload page
+  alert("Form submitted successfully!");
+  setFormData({ fullName: "", phone: "", email: "", message: "" });
+  setLoading(false);
 
-    window.location.reload();
-  };
+  window.location.reload();
+};
 
 
   return (
